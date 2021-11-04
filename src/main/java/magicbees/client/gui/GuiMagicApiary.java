@@ -41,15 +41,15 @@ public class GuiMagicApiary extends GuiContainer {
     private static final int WORKBOOST_DEST_Y = 18;
     private static final int WORKBOOST_SRC_X = 176;
     private static final int WORKBOOST_SRC_Y = 46;
-
-    private static final int DEATHBOOST_WIDTH = 11;
+    
+    private static final int DEATHBOOST_WIDTH = 13;
     private static final int DEATHBOOST_HEIGHT = 13;
     private static final int DEATHBOOST_DEST_X = 25;
     private static final int DEATHBOOST_DEST_Y = 17;
     private static final int DEATHBOOST_SRC_X = 176;
     private static final int DEATHBOOST_SRC_Y = 58;
-
-    private static final int MUTATIONBOOST_WIDTH = 9;
+    
+    private static final int MUTATIONBOOST_WIDTH = 10;
     private static final int MUTATIONBOOST_HEIGHT = 13;
     private static final int MUTATIONBOOST_DEST_X = 15;
     private static final int MUTATIONBOOST_DEST_Y = 17;
