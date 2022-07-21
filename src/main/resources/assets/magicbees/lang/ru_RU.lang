@@ -495,7 +495,7 @@ tc.research_page.MB_EssenceLife.1=Simple to create by means of magic, this essen
 
 tc.research_name.MB_EssenceDeath=Эссенция неглубокой могилы
 tc.research_text.MB_EssenceDeath=[MB] Не совсем шесть футов под килем.
-tc.reseacrh_page.MB_EssenceDeath.1=The Essence of a Shallow Grave channels the death of many of the ... "natural" creatures that wander the world: Zombies, Skeletons, those sorts of things. Exposing bees to this energy has the effect of making them slow and sluggish, and curtails the extent of their lifespan. Some Apimancers consider using frames imbued with these Essences to be cruel, however, others view it as a natrual part of normal beekeeping, with an eye to creating their perfect strain of bees sometime within THEIR lifetime. <BR> The Apimancer's Guild of Safety recommends handling them with telekenisis or very long tongs.
+tc.research_page.MB_EssenceDeath.1=The Essence of a Shallow Grave channels the death of many of the ... "natural" creatures that wander the world: Zombies, Skeletons, those sorts of things. Exposing bees to this energy has the effect of making them slow and sluggish, and curtails the extent of their lifespan. Some Apimancers consider using frames imbued with these Essences to be cruel, however, others view it as a natrual part of normal beekeeping, with an eye to creating their perfect strain of bees sometime within THEIR lifetime. <BR> The Apimancer's Guild of Safety recommends handling them with telekenisis or very long tongs.
 
 tc.research_name.MB_EssenceArmor=Эссенция вечной прочности
 tc.research_text.MB_EssenceArmor=[MB] Резина для Вашего клея
