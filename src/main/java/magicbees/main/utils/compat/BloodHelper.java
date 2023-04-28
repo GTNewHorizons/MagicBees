@@ -1,12 +1,14 @@
 package magicbees.main.utils.compat;
 
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import magicbees.main.Config;
+
 import net.minecraft.util.IIcon;
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.common.config.Property;
+
+import cpw.mods.fml.common.Loader;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class BloodHelper implements IModHelper {
 
@@ -15,7 +17,6 @@ public class BloodHelper implements IModHelper {
 
     private static boolean isBloodMagicActive = false;
     public static final String Name = "bloodmagic";
-
 
     public static boolean isActive() {
         return isBloodMagicActive;
@@ -27,7 +28,7 @@ public class BloodHelper implements IModHelper {
         }
     }
 
-    public void init() { }
+    public void init() {}
 
     public void postInit() {}
 
