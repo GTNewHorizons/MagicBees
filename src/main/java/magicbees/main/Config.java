@@ -3,7 +3,6 @@ package magicbees.main;
 import java.io.File;
 import java.lang.reflect.Field;
 
-import magicbees.main.utils.compat.BloodHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
@@ -55,6 +54,7 @@ import magicbees.item.types.WaxType;
 import magicbees.main.utils.LocalizationManager;
 import magicbees.main.utils.LogHelper;
 import magicbees.main.utils.VersionInfo;
+import magicbees.main.utils.compat.BloodHelper;
 import magicbees.main.utils.compat.BotaniaHelper;
 import magicbees.main.utils.compat.ThaumcraftHelper;
 import magicbees.storage.BackpackDefinition;
