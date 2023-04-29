@@ -3,7 +3,6 @@ package magicbees.main;
 import java.io.File;
 import java.lang.reflect.Field;
 
-import cpw.mods.fml.common.Loader;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
@@ -15,6 +14,7 @@ import net.minecraftforge.common.config.Property;
 import net.minecraftforge.oredict.OreDictionary;
 
 import cpw.mods.fml.client.event.ConfigChangedEvent;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.event.FMLInterModComms;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -252,7 +252,7 @@ public class Config {
         arsMagicaActive = p.getBoolean();
 
         p = configuration.get(CATEGORY_MODULES, "BloodMagic", true);
-        //bloodMagicActive = p.getBoolean();
+        // bloodMagicActive = p.getBoolean();
         bloodMagicActive = Loader.isModLoaded("AWWayofTime");
 
         p = configuration.get(CATEGORY_MODULES, "EquivalentExchange", true);
