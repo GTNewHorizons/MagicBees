@@ -19,6 +19,10 @@ public class GUIEffectJar extends GuiContainer {
     private static final int WIDTH = 176;
     private static final int HEIGHT = 156;
 
+    private static final int SLOT_JAR_X = 80;
+    private static final int SLOT_JAR_Y = 22;
+    private static final int SLOT_INVENTORY_X = 8;
+    private static final int SLOT_INVENTORY_Y = 74;
     private static final int BAR_DEST_X = 117;
     private static final int BAR_DEST_Y = 10;
 

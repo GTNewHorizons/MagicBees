@@ -10,7 +10,24 @@ import magicbees.block.BlockMagicApiary;
 import magicbees.block.BlockManaAuraProvider;
 import magicbees.block.BlockVisAuraProvider;
 import magicbees.block.types.HiveType;
-import magicbees.item.*;
+import magicbees.item.ItemCapsule;
+import magicbees.item.ItemComb;
+import magicbees.item.ItemDrop;
+import magicbees.item.ItemMagicHive;
+import magicbees.item.ItemMagicHiveFrame;
+import magicbees.item.ItemManasteelGrafter;
+import magicbees.item.ItemManasteelScoop;
+import magicbees.item.ItemMiscResources;
+import magicbees.item.ItemMoonDial;
+import magicbees.item.ItemMysteriousMagnet;
+import magicbees.item.ItemNugget;
+import magicbees.item.ItemPollen;
+import magicbees.item.ItemPropolis;
+import magicbees.item.ItemThaumiumGrafter;
+import magicbees.item.ItemThaumiumScoop;
+import magicbees.item.ItemVoidGrafter;
+import magicbees.item.ItemVoidScoop;
+import magicbees.item.ItemWax;
 import magicbees.item.types.CapsuleType;
 import magicbees.item.types.HiveFrameType;
 import magicbees.item.types.NuggetType;
@@ -111,7 +128,6 @@ public class Config {
     public static ItemNugget nuggets;
     public static ItemMoonDial moonDial;
     public static ItemMysteriousMagnet magnet;
-    public static ItemBeeRing beeRing;
 
     public static Item voidScoop;
     public static Item voidGrafter;
@@ -183,8 +199,6 @@ public class Config {
         miscResources = new ItemMiscResources();
         pollen = new ItemPollen();
         moonDial = new ItemMoonDial();
-        beeRing = new ItemBeeRing();
-
         setupJellyBaby();
         setupNuggets();
         setupMysteriousMagnet();
