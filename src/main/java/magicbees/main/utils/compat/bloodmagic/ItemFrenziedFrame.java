@@ -39,7 +39,7 @@ public class ItemFrenziedFrame extends EnergyItems implements IHiveFrame {
 
         @Override
         public float getLifespanModifier(IBeeGenome genome, IBeeGenome mate, float currentModifier) {
-            return 0.0001f;
+            return 1;
         }
 
         @Override
