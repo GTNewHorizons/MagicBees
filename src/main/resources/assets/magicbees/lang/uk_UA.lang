@@ -1,0 +1,892 @@
+language.name=Ukrainian
+language.region=UA
+language.code=uk_UA
+
+
+# -- Mysterious Magnet levels
+misc.level=Рівень %s
+misc.magnetActive=%s - Активний
+misc.magnetInactive=%s - Неактивний
+
+#Items
+item.magicbees.jelly_babies.name=Жменя маленького желе
+item.magicbees.manasteelscoop.name=Сачок з манасталі
+item.magicbees.thaumiumscoop.name=Таумічний сачок
+item.magicbees.manasteelgrafter.name=Садовий ніж з манасталі
+item.magicbees.thaumiumgrafter.name=Таумічний садовий ніж
+item.magicbees.mysteriousmagnet.name=Таємничий магніт
+item.magicbees.moondial.name=Нефритовий набір місяця
+
+#Tiles
+tile.magicbees.effectjar.name=Банка для збору бджіл
+tile.magicbees.hiveblock.curious.name=Дивний вулик
+tile.magicbees.hiveblock.unusual.name=Незвичайний вулик
+tile.magicbees.hiveblock.deep.name=Глибинний вули
+tile.magicbees.hiveblock.resonant.name=Резонуючий вулик
+tile.magicbees.hiveblock.infernal.name=Адський вулик
+tile.magicbees.hiveblock.oblivion.name=Забутий вулик
+tile.magicbees.enchanted_earth.name=Зачарована земля
+
+tile.magicApiary.name=Чарівна пасіка
+tile.visAuraProvider.name=Підсилювач пасіки
+tile.manaAuraProvider.name=Мана прискорювач пачіки
+
+#Beecombs
+item.magicbees.beecomb.mundane.name=Буденні стільники
+item.magicbees.beecomb.molten.name=Розплавлені стільники
+item.magicbees.beecomb.occult.name=Окультні стільники
+item.magicbees.beecomb.otherworldly.name=Потойбічні стільники
+item.magicbees.beecomb.transmuted.name=Трансмутуючі стільники
+
+item.magicbees.beecomb.papery.name=Паперові стільники
+item.magicbees.beecomb.soul.name=Душевні стільники
+item.magicbees.beecomb.furtive.name=Непомітні стільники
+item.magicbees.beecomb.intellect.name=Пам'ятні стільники
+item.magicbees.beecomb.temporal.name=Часові стільники
+item.magicbees.beecomb.forgotten.name=Забуті стільники
+
+item.magicbees.beecomb.airy.name=Вітряні стільники
+item.magicbees.beecomb.firey.name=Вогняні стільники
+item.magicbees.beecomb.watery.name=Водяні стільники
+item.magicbees.beecomb.earthy.name=Земляні стільники
+item.magicbees.beecomb.tc_air.name=Блискучі вітряні стільники
+item.magicbees.beecomb.tc_fire.name= Блискучі вогняні стільники
+item.magicbees.beecomb.tc_water.name=Блискучі водяні стільники
+item.magicbees.beecomb.tc_earth.name=Блискучі земляні стільники
+item.magicbees.beecomb.tc_order.name= Блискучі впорядковані стільники
+item.magicbees.beecomb.tc_entropy.name= Блискучі ентропійні стільники
+item.magicbees.beecomb.essence.name=Есенційні стільники
+item.magicbees.beecomb.potent.name=Міцні стільники
+item.magicbees.beecomb.te_carbon.name=Вуглецеві стільники
+item.magicbees.beecomb.te_destabilized.name=Електричні стільники
+item.magicbees.beecomb.te_lux.name=Світлі стільники
+item.magicbees.beecomb.te_endearing.name=Підкорювальні стільники
+
+#Wax
+item.magicbees.wax.magic.name=Магічний віск
+item.magicbees.wax.soul.name=Душевний віск
+item.magicbees.wax.amnesic.name=Амнезійний віск
+
+#Drop
+item.magicbees.drop.enchanted.name=Зачарована крапля
+item.magicbees.drop.intellect.name=Інтелектуальна крапля
+item.magicbees.drop.destabilized.name=Нестабільна крапля
+item.magicbees.drop.carbon.name=Вуглецева крапля
+item.magicbees.drop.lux.name=Світла крапля
+item.magicbees.drop.endearing.name=Чарівна крапля
+
+#Pollen
+item.magicbees.pollen.unusual.name=Незвичайний пилок
+item.magicbees.pollen.phased.name=Поетапний пилок
+
+
+#Nuggets
+item.magicbees.orepart.iron.name=Залізний самородок
+item.magicbees.orepart.diamond.name=Діамантовий самородок
+item.magicbees.orepart.emerald.name=Смарагдовий самородок
+item.magicbees.orepart.apatite.name=Апатитовий самородок
+item.magicbees.orepart.copper.name=Мідний самородок
+item.magicbees.orepart.tin.name=Олов'яний самородок
+item.magicbees.orepart.bronze.name=Бронзовий самородок
+
+#Propolises
+item.magicbees.propolis.order.name=Замовлений прополіс
+item.magicbees.propolis.air.name=Вітряний прополіс
+item.magicbees.propolis.fire.name=Гарячий прополіс
+item.magicbees.propolis.water.name=Плаваючий прополіс
+item.magicbees.propolis.earth.name=Кам'янистий прополіс
+item.magicbees.propolis.entropy.name=Ентропійний прополіс
+item.magicbees.propolis.unstable.name=Нестабільний прополіс
+
+#Misc Resources
+item.magicbees.resource.fragment.name=Фрагмент знань
+item.magicbees.resource.lump.name=Ароматна грудка
+item.magicbees.resource.fertilizer.name=Концентрована суміш
+item.magicbees.resource.skullChip.name=Кістяна крихта скелета Візера
+item.magicbees.resource.skullFragment.name=Фрагмент черепа Візера
+item.magicbees.resource.dragonDust.name=Драконічний пил
+item.magicbees.resource.dragonChunk.name=Драконічний шматок
+item.magicbees.resource.essenceLife.name=Есенція фальшивого життя
+item.magicbees.resource.essenceDeath.name=Есенція неглибокої могили
+item.magicbees.resource.essenceTime.name=Есенція втраченого часу
+item.magicbees.resource.essenceDurability.name=Есенція вічної міцності
+item.magicbees.resource.essenceOblivion.name=Есенція презирливого забуття
+item.magicbees.resource.essenceMutable.name=Есенція мінливої постійності
+item.magicbees.resource.TCairDust.name=Повітряний пил
+item.magicbees.resource.TCfireDust.name=Вогняний пил
+item.magicbees.resource.TCwaterDust.name=Водяний пилок
+item.magicbees.resource.TCearthDust.name=Земний пил
+item.magicbees.resource.TCorderDust.name=Пилок на замовлення
+item.magicbees.resource.TCchaosDust.name=Пилок хаосу
+item.magicbees.resource.dimensionalSingularity.name=Дименційна сингулярність
+item.magicbees.resource.startNode.name=Бджоли і магія
+item.magicbees.resource.crysrtalAspect.name=Кристалізований аспект %s
+
+#Frames
+item.magicbees.frames.magic.name=Магічна рамка
+item.magicbees.frames.resilient.name=Стійкі рамки
+item.magicbees.frames.gentle.name=Ніжна рамка
+item.magicbees.frames.metabolic.name=Метаболічна рамка
+item.magicbees.frames.necrotic.name=Некротична рамка
+item.magicbees.frames.temporal.name=Темпоральна рамка
+item.magicbees.frames.oblivion.name=Рамка забуття
+
+#Frame tooltips
+magicbees.frame.modifier.production=Виробництво
+magicbees.frame.modifier.genetic_decay=Генетичний розпад
+magicbees.frame.modifier.mutation=Мутація
+magicbees.frame.modifier.lifespan=Тривалість життя
+magicbees.frame.modifier.territory=Територія
+magicbees.frame.modifier.flowering=Цвітіння
+
+#Capsules
+capsule.magic=%s Магічна капсула
+capsule.void=%s Порожня капсула
+
+#Liquids
+liquid.=Порожня
+liquid.water=Вода
+liquid.lava=Лава
+liquid.biomass=Біомаса
+liquid.bioethanol=Біоетанол
+liquid.oil=Нафта
+liquid.fuel=Пальне
+liquid.seedoil=Насіннєва олія
+liquid.honey=Мед
+liquid.juice=Сік
+liquid.ice=Лід
+liquid.milk=Молоко
+liquid.acid=Кислота
+liquid.poison=Отрута
+liquid.liquidnitrogen=Рідкий азот
+liquid.liquiddna=Рідка ДНК
+liquid.creosote=Креозотова олія
+liquid.steam=Пар
+liquid.redstone=Дестабілізований червоний камінь
+liquid.glowstone=Глоустоун з енергією
+liquid.ender=Резонансний ендер
+liquid.pyrotheum=Палаючий піротеум
+liquid.cryotheum=Крижаний кріотеум
+liquid.mana=Первісна мана
+liquid.coal=Зріджене вугілля
+
+#Moondial & Mutation moon phase conditions
+moon.full=Повний місяць
+moon.gibbousWaning=Спадаючий напівмісяць
+moon.gibbousWaxing=Зростаючий напівмісяць
+moon.halfWaning=Спадаюча половина
+moon.halfWaxing=Зростаюча половина
+moon.crescentWaning=Спадаючий загин
+moon.crescentWaxing=Зростаючий загин
+moon.new=Новий місяць
+
+
+#Backpack
+item.backpack.thaumaturgeT1.name=Рюкзак тауматурга
+item.backpack.thaumaturgeT2.name=Плетеный рюкзак тауматурга
+
+#Creative Tab
+itemGroup.magicbees=Магічні бджоли
+
+#Botania flowers; Lexicon entries nearer the end.
+tile.botania:flower.beegonia.name=Бегонія
+tile.botania:flower.beegonia.lore=Ми вас більше не побачимо...
+tile.botania:flower.hiveacynth.name=Хівацинт
+tile.botania:flower.hiveacynth.lore=У саду Морвелаїри
+tile.botania:flower.hibeescus.name=Гібескус
+tile.botania:flower.hibeescus.lore=Каламбури можуть трохи вжалити
+
+#Research
+research.requiresBlock=Потребує фундаменту з %s
+research.requiresPhase=Виконується між %s та %s
+research.requiresPhaseSingle=Протягом %s
+research.bonusPhase=Більший успіх між %s та %s.
+research.bonusPhaseSingle=Більший успіх протягом %s.
+research.requiresNode=Виникає лише тоді, коли вузол знаходиться поблизу
+research.requiresNodeSpecific=Відбувається лише в межах впливу вузла %s
+research.requiresBiome=Виконується в межах біома %s
+research.requiresNight=Відбувається лише після заходу сонця
+research.node.pure=Чистий
+research.node.dark=Темний
+дослідж.вузол.хаотичний=Хаотичний
+дослідницький.блок.кристалів=Кристалічний кластер
+
+#Species
+magicbees.speciesMystical=Містична
+magicbees.speciesMystical.description=Поширені в багатьох частинах світу, а також трохи примхливі.|Apinomicon
+magicbees.speciesSorcerous=Чаклунська
+magicbees.speciesSorcerous.description=Полюбляючи тепле сухе середовище, вони, здається, мають здатність викликати воду з повітря.|Apinomicon
+magicbees.speciesUnusual=Незвичайна
+magicbees.speciesUnusual.description="Цікавий екземпляр для моєї колекції!"|Молодший пасічник
+magicbees.speciesAttuned=Налаштована
+magicbees.speciesAttuned.description=Вони літають, наче керовані невидимими нитками в повітрі.|Apinomicon
+
+magicbees.speciesEldritch=Старовинна
+magicbees.speciesEldritch.description=Потенціал, який був прихований у предках цієї бджоли, тепер вийшов на перший план.|Apinomicon
+
+magicbees.speciesEsoteric=Езотерична
+magicbees.speciesEsoteric.description=Незвичайний вид, який, здається, має магічні властивості.|Apinomicon
+magicbees.speciesMysterious=Загадкова
+magicbees.speciesMysterious.description=Ці бджоли побували на краю світу і повернулись, їхня сила зросла.|Apinomicon
+magicbees.speciesArcane=Таємнича
+magicbees.speciesArcane.description="Їх продукт заряджений магією."|Azanor, Master Thaumaturge
+
+magicbees.speciesCharmed=Чарівна
+magicbees.speciesCharmed.description=Ваші перші експерименти з тауматургічного бджільництва принесли свої плоди.|Apinomicon
+magicbees.speciesEnchanted=Зачарована
+magicbees.speciesEnchanted.description=Наступні покоління зачарованих бджіл посилили свій зв'язок з невідомим.|Apinomicon
+magicbees.speciesSupernatural=Надприродня
+magicbees.speciesSupernatural.description=Ці бджоли ходять по межі між цим світом і потойбіччям.|Apinomicon
+
+magicbees.speciesEthereal=Потойбічна
+magicbees.speciesEthereal.description=Примарна і заряджена енергією ззовні.|Apinomicon
+
+magicbees.speciesWatery=Водяна
+magicbees.speciesWatery.description=Полюбляє вологі місця та проточну воду.|Apinomicon
+magicbees.speciesEarthy=Земляна
+magicbees.speciesEarthy.description=Мають "залізний" зв'язок з каменем і брудом.|Apinomicon
+magicbees.speciesFirey=Вогняна
+magicbees.speciesFirey.description=Настільки близькі до живого полум'я, наскільки це можливо.|Apinomicon
+magicbees.speciesWindy=Вітряна
+magicbees.speciesWindy.description=Рідко зустрічаються на рівнинних, широких відкритих просторах. Їхні території величезні.|Apinomicon
+
+magicbees.speciesPupil=Учнівська
+magicbees.speciesPupil.description="Що цій бджолі треба від моєї бумаги?!"|Yorae, Librarian
+magicbees.speciesScholarly=Розумна
+magicbees.speciesScholarly.description="Я не можу бути впевненим, але думаю, що вони можуть бути розумнішими за мене..."|Yorae, Librarian
+magicbees.speciesSavant=Вчена
+magicbees.speciesSavant.description=lim(x^(i / pi)/ log(e * 7 - ln(32/x^-pi))). Розв'яжіть для отримання меду.|Note found on Yorae's desk
+
+magicbees.speciesAware=Обізнана
+magicbees.speciesAware.description="Вони можуть зазирнути у вашу душу!"|Florastar, Expert Beekeeper
+magicbees.speciesSpirit=Спіритична
+magicbees.speciesSpirit.description=Кажуть, що ці бджоли здатні контактувати з мертвими.|Apinomicon
+magicbees.speciesSoul=Душевна
+magicbees.speciesSoul.description="Жахливий пірат Робертс прийшов за вашими ДУШАМИ!"|Dread Pirate Roberts
+
+magicbees.speciesSkulking=Відлюдницька
+magicbees.speciesSkulking.description=Ці бджоли стали ксенофобами і мають поганий характер. Будьте обережні.|Apinomicon
+magicbees.speciesGhastly=Огидна
+magicbees.speciesGhastly.description="*зітхання*... Справді, містичні?"|Taveria, irritated Apiarist
+magicbees.speciesSpidery=Павуча
+magicbees.speciesSpidery.description=Бджола-павучиха; n. Робить все, що робить павучиха.|Unknown
+magicbees.speciesSmouldering=Тліюча
+magicbees.speciesSmouldering.description=Тліючи бджоли стали вогнем вічно палаючого Полум'я.|Apinomicon
+magicbees.speciesBigbad=Велика Зла
+magicbees.speciesBigbad.description="Хто боїться Великого Поганого Кріса?"|Pahimar, last words
+magicbees.speciesBrainy=Інтелектуальна
+magicbees.speciesBrainy.description=Їх стільники можуть бути смердючими, але їхній інтелект добре розвинений|Apinomicon
+magicbees.speciesBatty=Кажанова
+magicbees.speciesBatty.description=Схильні приваблювати кажанів до своїх вуликів невідомими способами.|Apinomicon
+magicbees.speciesChicken=Куряча
+magicbees.speciesChicken.description="Кудкудакання. Ку-ку-ку! ... Ви мене чули."|Confused bee
+magicbees.speciesBeef=Яловича
+magicbees.speciesBeef.description="Муу, муу, муу. Зачекай, що?"|Confused bee
+magicbees.speciesPork=Свиняча
+magicbees.speciesPork.description="Хрю, хрю. Е.... бззз?"|Confused bee
+magicbees.speciesSheepish=Овеча
+magicbees.speciesSheepish.description="Баа бааааааззззз бззз"|Confused bee
+magicbees.speciesCatty=Котяча
+magicbees.speciesCatty.description="Мур-мур-мур няв-няв-няв"|Confused bee
+magicbees.speciesHorse=Кінна
+magicbees.speciesHorse.description="Ні! Я маю на увазі Іго-го."|Confused bee
+
+magicbees.speciesTimely=Своєчасна
+magicbees.speciesTimely.description="Пасічник ніколи не спізнюється. Він приходить саме тоді, коли має намір!"|Sengir, Mad Apiarist
+magicbees.speciesLordly=Гармонічна
+magicbees.speciesLordly.description=Вони живуть у мирі, під прицілом Ока Гармонії|Tattered Remains of ancient Apinomicon
+magicbees.speciesDoctoral=Докторська
+magicbees.speciesDoctoral.description="Хочете желе?"|Passing stranger with a great scarf and a blue box
+
+magicbees.speciesInfernal=Пекельна
+magicbees.speciesInfernal.description=Народжені глибоко в пекельному царстві, жодна з них не прожила достатньо довго, щоб визначити свої здібності.|Apinomicon
+magicbees.speciesHateful=Ненависна
+magicbees.speciesHateful.description=Постійний контакт з Пеклом анітрохи не покращив їхній темперамент. Будьте обережні.|Apinomicon
+magicbees.speciesSpiteful=Злопам'ятна
+magicbees.speciesSpiteful.description=Охороняють свою територію запекло і з завзяттям диявола|Apinomicon
+magicbees.speciesWithering=Висушуюча
+magicbees.speciesWithering.description=Один лише їхній проліт спричиняє занепад життя, повільно висмоктуючи всю енергію з їхньої території.|Apinomicon
+
+magicbees.speciesOblivion=Забута
+magicbees.speciesOblivion.description=Невідомо, чи ці бджоли походять з цього світу, чи з якогось іншого.|Apinomicon
+magicbees.speciesNameless=Безіменна
+magicbees.speciesNameless.description="Інші натуралісти відмовилися вивчати цих бджіл. Я маю знати чому."|Tattered Research Notes
+magicbees.speciesAbandoned=Покинута
+magicbees.speciesAbandoned.description="Чим більше я вивчаю цих бджіл, тим більше відчуваю, що їм не місце тут, або деінде."|Tattered Research Notes
+magicbees.speciesForlorn=Занедбана
+magicbees.speciesForlorn.description="Тепер я переконаний, що вони були залишені в нашому всесвіті навмисно якимись невідомими істотами."|Tattered Research Notes
+magicbees.speciesDraconic=Драконічна
+magicbees.speciesDraconic.description="З ревом вони випурхнули з вулика. Це був останній раз, коли ми бачили Джеральда"|Tattered Research Notes
+
+magicbees.speciesIron=Залізна
+magicbees.speciesIron.description=Поглинувши частину основного металу, ці бджоли можуть концентрувати есенцію заліза з регіону.|Apinomicon
+magicbees.speciesGold=Золота
+magicbees.speciesGold.description=Не все, що блищить - золото.|Ancient Aphorism
+magicbees.speciesCopper=Мідна
+magicbees.speciesCopper.description=Неблагородний метал, поширений у багатьох сферах застосування; ці бджоли корисні для магів, яким бракує ресурсів.|Apinomicon
+magicbees.speciesTin=Олов'яна
+magicbees.speciesTin.description=Хоча ці бджоли металеві, вони напрочуд крихкі.|Apinomicon
+magicbees.speciesSilver=Срібна
+magicbees.speciesSilver.description=Хоча їм не приділяють стільки уваги, як золотим бджолам, вони, тим не менш, цінні.|Apinomicon
+magicbees.speciesLead=Свинцева
+magicbees.speciesLead.description=Любимые у любительских алхимиков, они считают, что могут превратить этих пчёл в золото.|Apinomicon
+magicbees.speciesAluminium=Алюмінієва
+magicbees.speciesAluminium.description=Зморшкуваті, блискучі та надзвичайно пластичні.|Apinomicon
+magicbees.speciesArdite=Ардитова
+magicbees.speciesArdite.description=Полюбляє жовтувато-помаранчевий матеріал, що зустрічається в пекельних місцях.|Apinomicon
+magicbees.speciesCobalt=Кобальтова
+magicbees.speciesCobalt.description=Нестабільні властивості цього матеріалу, здається, анітрохи не впливають на бджіл.|Apinomicon
+magicbees.speciesManyullyn=Манюлінова
+magicbees.speciesManyullyn.description="Дзю-зю-зю-зю-зю-зю!"
+magicbees.speciesOsmium=Осмієва
+magicbees.speciesOsmium.description=Іноді плутають з іридієвими бджолами, незважаючи на відсутність липкої текстури та рожевого забарвлення, як описано в старих книгах.|Apinomicon
+magicbees.speciesSilicon=Кремнієва
+magicbees.speciesSilicon.description="Не плутати з силіконовими бджолами, також відомими як бджоли-бу!"|Myrathi, Wearer of Headpants
+magicbees.speciesCertus=Цертусна
+magicbees.speciesCertus.description=Одна з різновидів кварцових, трохи синіша, але не менш цінна.|Apinomicon
+magicbees.speciesFluix=Флюксова
+magicbees.speciesFluix.description=Поєднує в собі властивості редстоуну, кварцу Незера та кварцу Цертус, кристал Флюкс сам по собі є незвичайним, нестійким і летючим.|Apinomicon
+
+
+magicbees.speciesDiamond=Діамантова
+magicbees.speciesDiamond.description=Кристалічний, блискучий і твердіший за зуби дракона. Ці бджоли не такі.|Apinomicon
+magicbees.speciesEmerald=Смарагдова
+magicbees.speciesEmerald.description=Кажуть, що вони побували в країні, якою править Великий Чарівник, і прийняли аспект його міста.|Apinomicon
+magicbees.speciesApatite=Апатитова
+magicbees.speciesApatite.description=День і ніч не вщухало жужіння. Я забарикадував вікна і сховався в підвалі, але звідусіль пронизливий шум апатитових бджіл проникав крізь стіни і виводив мене з рівноваги.|Beekeeping 101
+
+magicbees.speciesMutable=Мінлива
+magicbees.speciesMutable.description=Мінливий за характером, непостійний за вдачею.|Apinomicon
+magicbees.speciesTransmuting=Трансмутуюча
+magicbees.speciesTransmuting.description="Можу поклястися, що вчора це було зроблено з каменю!"|Sengir, Mad Apiarist
+magicbees.speciesCrumbling=Руйнуюча
+magicbees.speciesCrumbling.description=Виявляють корозійну дію на своє оточення, швидко руйнуючи його.|Apinomicon
+
+magicbees.speciesInvisible=Невидима
+magicbees.speciesInvisible.description=Легко не помітити, їхнє склоподібне тіло важко помітити в сільській місцевості.|Apinomicon
+
+magicbees.speciesTCAir=Аер
+magicbees.speciesTCAir.description="Вони працюють так швидко, що аж дух захоплює."|Sengir, Mad Apiarist
+magicbees.speciesTCFire=Ігніс
+magicbees.speciesTCFire.description=Обережно: Вміст вулика надзвичайно гарячий.|Warning label on Azanor's apiary
+magicbees.speciesTCWater=Аква
+magicbees.speciesTCWater.description="Одного разу я намагався їх розводити, але це було марно."|MysteriousAges, Apprentice Thaumaturge
+magicbees.speciesTCEarth=Солум
+magicbees.speciesTCEarth.description="Ви дійсно полюбите цих бджіл, але будьте обережні - вони досить легко набридають."|MysteriousAges, Apprentice Comedian
+magicbees.speciesTCOrder=Впорядкована
+magicbees.speciesTCOrder.description=Їх стільники майже ідеальні, кожна частина повторює візерунок цілого.|Apinomicon, Preface
+magicbees.speciesTCEntropy=Хаотична
+magicbees.speciesTCChaos.description="Соціальна структура їхніх вуликів, здається, змінюється з кожним днем, що робить її більш гнучкою та стійкою, ніж інші, але значно більш непередбачуваною."|Azanor, Master Thaumaturge
+magicbees.speciesTCVis=Віс
+magicbees.speciesTCVis.description="Вони можуть відчувати зміни в аурі, але ще не здатні впливати на неї"|Azanor, research notes
+magicbees.speciesTCRejuvenating=Омолоджуюча
+magicbees.speciesTCRejuvenating.description=Дзижчання вулика є магічним, і з часом поглинається сусідніми вузлами.|Apinomicon
+magicbees.speciesTCEmpowering=Посилена
+magicbees.speciesTCEmpowering.description=Настільки заряджені аурою, що в їхній присутності вузли немов застигають у воску.|Apinomicon
+magicbees.speciesTCNexus=Нексус
+magicbees.speciesTCNexus.description=Про їхні здібності проходити крізь вузли в інший світ говорять лише пошепки, висміюючи як вигадку та фантазію.|Apinomicon
+magicbees.speciesTCTaint=Плямиста
+magicbees.speciesTCTaint.description="Я думав, що вони допоможуть прибрати, але вони роблять тільки гірше!"|Kreicus, Apprentice Thaumaturge
+magicbees.speciesTCPure=Чиста
+magicbees.speciesTCPure.description="Це як бджолиний прибиральник!"|MysteriousAges, Thaumaturge
+magicbees.speciesTCHungry=Ненажерлива
+magicbees.speciesTCHungry.description=Невідомо, як бджоли беруть сиру есенцію з довкілля і що вони з нею роблять, але Багряний Культ, схоже, зацікавлений...|Apinomicon
+magicbees.speciesTCVoid=Пустотна
+magicbees.speciesTCVoid.description=§kNeque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit|?????
+magicbees.speciesTCWispy=Слизька
+magicbees.speciesTCWispy.description=Їхня мова спотворена і нерозбірлива. Ймовірно, вони розмовляють з неприродними істотами.|Apinomicon
+magicbees.speciesEEMinium=Змінна
+magicbees.speciesEEMinium.description=Може бути можливим використати їхню мінливу і непостійну природу.|Apinomicon
+magicbees.speciesAMEssence=Есенційна
+magicbees.speciesAMEssence.description=Витягуючи з порошинок пилу в повітрі та землі, вони концентрують енергію
+magicbees.speciesAMQuintessence=Квінтесенційна
+magicbees.speciesAMQuintessence.description=Серце магії дрімає у всіх речах.|Apinomicon, preface
+magicbees.speciesAMEarth=Терра
+magicbees.speciesAMEarth.description=Наповнені силою Землі, їхні продукти просякнуті її сутністю.|Apinomicon
+magicbees.speciesAMAir=Ефірна
+magicbees.speciesAMAir.description=Швидкі, як вітер, і легші за повітря.|Apinomicon
+magicbees.speciesAMFire=Палаюча
+magicbees.speciesAMFire.description=Їх колонія може досягати температури, при якій закипає вода і плавляться метали.|Apinomicon
+magicbees.speciesAMWater=Водяниста
+magicbees.speciesAMWater.description=Через тривалий вплив рідини їхні стільники стають досить вологими і важкими.|Apinomicon
+magicbees.speciesAMLightning=Блискавична
+magicbees.speciesAMLightning.description=Можуть долати величезні відстані за одну мить, і відомі тим, що спричиняють багато лісових пожеж.|Apinomicon
+magicbees.speciesAMPlant=Рослинна
+magicbees.speciesAMPlant.description=Мають прихильність до всього зеленого, що росте.|Apinomicon
+magicbees.speciesAMIce=Льодовикова
+magicbees.speciesAMIce.description="Вони постійно крадуть у мене речі, а я їх ніколи не бачу. Вони занадто слизькі."|MysteriousAges, incorrigible punster
+magicbees.speciesAMMagma=Лавова
+magicbees.speciesAMMagma.description=Пролітаючи повз, вони випалюють поверхню ландшафту, зрештою знищуючи всі рослини і крихкі мінерали.|Apinomicon
+magicbees.speciesAMArcane=Таємнича
+magicbees.speciesAMArcane.description="Цікаві створіння, їх продукція досить корисна."|Mithion, Adept
+magicbees.speciesAMVortex=Вихрова
+magicbees.speciesAMVortex.description=Ненажерливі до мани, вони можуть бути небезпечними для будь-якого чарівника.|Apinomicon
+magicbees.speciesAMWight=Могутня
+magicbees.speciesAMWight.description="Привертають магічних духів; не завжди слухняні."|Mithion, Adept
+magicbees.speciesTEBlizzy=Зимна
+magicbees.speciesTEBlizzy.description=Холодні й застиглі, схожі на мініатюрних сніговиків.|Apinomicon
+magicbees.speciesTEGelid=Крижана
+magicbees.speciesTEGelid.description=Виробники рідкого охолоджувача.|Apinomicon
+magicbees.speciesTEDante=Данте
+magicbees.speciesTEDante.description=Змішування бджіл у пеклі призводить до несподіваних результатів.|Apinomicon
+magicbees.speciesTEPyro=Піро
+magicbees.speciesTEPyro.description=Ти монстр.|Всі до тебе.
+magicbees.speciesTEShocking=Шокуюча
+magicbees.speciesTEShocking.description=Їх вулики притягують статичний заряд через невідомий механізм. Будьте обережні при збиранні стільників|Apinomicon
+magicbees.speciesTEAmped=Ампед
+magicbees.speciesTEAmped.description="Вони дуже збуджені. Шалено радіють. Це можна виміряти електричним струмом, ось наскільки вони збуджені."|Marquis Muskrat
+magicbees.speciesTEGrounded=Заземлена
+magicbees.speciesTEGrounded.description=Мають схильність до музики, особливо до різновидів з електрогітарами та крикливим вокалом.|Apinomiconl
+magicbees.speciesTERocking=Роккі
+magicbees.speciesTERocking.description=[гітарне соло]
+magicbees.speciesElectrum=Електрумова
+magicbees.speciesElectrum.description=Взяли ліпше з обох дорогоцінних металів|Apinomicon
+magicbees.speciesPlatinum=Платинова
+magicbees.speciesPlatinum.description=Дорогоцінний, пластичний і неймовірно блискучий.|Apinomicon
+magicbees.speciesNickel=Нікелева
+magicbees.speciesNickel.description="Якби я отримував нікель щоразу, коли чую це... у мене був би вулик!"|Marquis Muskrat
+magicbees.speciesInvar=Інварова
+magicbees.speciesInvar.description="Коефіцієнт теплового розширення досить низький. А ще це каламбур!"|Marquis Muskrat
+magicbees.speciesBronze=Бронзова
+magicbees.speciesBronze.description="Я так люблю цих бджіл, що законсервував їх на потім."|Marquis Muskrat
+magicbees.speciesTECoal=Вугільна
+magicbees.speciesTECoal.description="Ого, ці бджоли - вуглецева копія тих, що в Extra Bees!"|Marquis Muskrat
+magicbees.speciesTEDestabilized=Дестабілізована
+magicbees.speciesTEDestabilized.description=Ці бджоли починали нестабільно; з часом їм не стало краще.|Apinomicon
+magicbees.speciesTELux=Люкс
+magicbees.speciesTELux.description="Хай буде світло!"|Marquis Muskrat
+magicbees.speciesTEWinsome=Приваблива
+magicbees.speciesTEWinsome.description="Мені подобаються ці, вони такі милі!"|Jadedcat, maker of packs
+magicbees.speciesTEEndearing=Стильна
+magicbees.speciesTEEndearing.description="Якщо не брати до уваги гіпнотичні здібності та злісну вдачу, ці бджоли наймиліші!"|Jadedcat, maker of packs
+magicbees.speciesRSAFluxed=Флаксова
+magicbees.speciesRSAFluxed.description="Що? Бджоли - це імба."|Marquis Muskrat
+magicbees.speciesBOTRooted=Підкорнева
+magicbees.speciesBOTRooted.description="Якщо ви піднесете цих бджіл до квадрату, вони вже не будуть під корнем."|MysteriousAges, bad at math jokes
+magicbees.speciesBOTBotanic=Ботанічна
+magicbees.speciesBOTBotanic.description=Наповнені містичним життям, вони поширюють містичні квіти.|Apinomicon
+magicbees.speciesBOTBlossom=Цвітуча
+magicbees.speciesBOTBlossom.description=Проста присутність цих бджіл спонукає бутони розпускатися швидше.|Apinomicon
+magicbees.speciesBOTFloral=Квіткова
+magicbees.speciesBOTFloral.description=Ці бджоли так люблять квіти, що практично приносять їх назад у вулик.|Apinomicon
+magicbees.speciesBOTVazbee=Вазбі
+magicbees.speciesBOTVazbee.description=Це не косплейна бджола!|Lexica Botania
+magicbees.speciesBOTSomnolent=Сонна
+magicbees.speciesBOTSomnolent.description=Повільні та неповороткі, вони працюють повільно порівняно з більшістю інших видів.|Apinomicon
+magicbees.speciesBOTDreaming=Мрійлива
+magicbees.speciesBOTDreaming.description=Ці бджоли проводять непомірно багато часу в неактивному стані і сплять; неможливо дізнатися, що їм сниться.|Apinomicon
+magicbees.speciesBOTAlfheim=Альфгейм
+magicbees.speciesBOTAlfheim.description=Вони згадують свій час в Альфгаймі, тужать за світом, наповненим маною, і прагнуть зробити його таким.|Apinomicon
+magicbees.speciesAESkystone=Скайстоун
+magicbees.speciesAESkystone.description=Народжений від з'єднання Землі та Небес, падаючи на землю, оточений полум'ям.|Apinomicon
+
+magicbees.speedBlinding=Сліпота
+
+#Alleles
+magicbees.allele.effectcleansing=Очищення
+magicbees.allele.effectcleansing.desc=Видаляє негативні ефекти з гравців
+magicbees.allele.effectdigspeed=Швидкість копання
+magicbees.allele.effectdigspeed.desc=Змушує гравців копати швидше
+magicbees.allele.effectmovespeed=Швидкість
+magicbees.allele.effectmovespeed.desc=Змушує гравців рухатися швидше
+magicbees.allele.effectslowspeed=Викривлення часу
+magicbees.allele.effectslowspeed.desc=Може викликати нудоту, оскільки гравці подорожують через викривлення часу
+magicbees.allele.effectwithering=Виснаження
+magicbees.allele.effectwithering.desc=Проклинає гравців поблизу виснаженням
+magicbees.allele.effecttransmuting=Трансмутація
+magicbees.allele.effecttransmuting.desc=Трансформує матеріали залежно від багатьох факторів
+magicbees.allele.crumbling=Крихкість
+magicbees.allele.crumbling.desc=Зумовлює тверді матеріали ставати м'якшими
+magicbees.allele.effectinvisibility=Невидимість
+magicbees.allee.effectinvisibility=desc=Робить гравців невидимими
+magicbees.allele.visrecharge=Перезарядка
+magicbees.allele.visrecharge.desc=Перезаряджає вузли аури поблизу
+magicbees.allele.nodeempower=Посилення
+magicbees.allele.nodeempower.desc=Перезаряджає вузли аури поблизу на постійній основі
+magicbees.allele.noderepair=Збільшення
+magicbees.allele.noderepair.desc=Збільшує яскравість вузлів аури
+magicbees.allele.nodeconversiontaint=Забруднення
+magicbees.allele.nodeconversiontaint.desc=Забруднює вузли аури
+magicbees.allele.nodeconversionpure=Очищення
+magicbees.allele.nodeconversionpure.desc=Очищає вузли аури
+magicbees.allele.nodeconversionhungry=Виснаження вузлів
+magicbees.allele.nodeconversionhungry.desc=Виснажує вузли аури, незвично змінюючи їхню природу
+magicbees.allele.brainy=Кмітливість
+magicbees.allele.brainy.desc=Випадково породжує сильних зомбі
+magicbees.allele.batty=Кажан
+magicbees.allele.batty.desc=Випадково генерує кажанів
+magicbees.allele.wispy=Вісп
+magicbees.allele.wispy.desc=Випадково генерує Віспів
+magicbees.allele.ghastly=Гаст
+magicbees.allele.ghastly.desc=Випадково генерує гастів
+magicbees.allele.spidery=Павук
+magicbees.allele.spidery.desc=Випадково генерує павуків
+magicbees.allele.ablaze=Блейз
+magicbees.allele.ablaze.desc=Випадково генерує блейзів
+magicbees.allele.canine=Вовк
+magicbees.allele.canine.desc=Випадково генерує вовків
+magicbees.effectManaDrainer=Висмоктувач мани
+magicbees.effectManaDrainer.desc=Випадково породжує висмоктувачів мани
+magicbees.effectAMWisp=Дух
+magicbees.effectAMWisp.desc=Випадково породжує духів
+magicbees.allele.spawnblizz=Блітц
+magicbees.allele.spawnblizz.desc=Випадково породжує блітців
+magicbees.allele.spawnblitz=Бліц
+magicbees.allele.spawnblitz.desc=Випадково генерує бліців
+magicbees.allele.spawnbasalz=Базальз
+magicbees.allele.spawnbasalz.desc=Випадково генерує базальзів
+magicbees.allele.effectdreaming=Мрія
+magicbees.allele.effectdreaming.desc=Перетворює звичайні матеріали на ботанічні
+magicbees.allele.porcine=Свиня
+magicbees.allele.porcine.desc=Випадково генерує свиней.
+magicbees.allele.bovine=Корова
+magicbees.allele.bovine.desc=Випадково генерує корів.
+magicbees.allele.chicken=Курка
+magicbees.allele.sheep.desc=Випадково генерує курей.
+magicbees.allele.sheep=Вівця
+magicbees.allele.sheep.desc=Випадково генерує овець.
+magicbees.allele.catty=Кіт
+magicbees.allele.catty.desc=Випадково генерує котів.
+magicbees.allele.horse=Кінь
+magicbees.allele.horse.desc=Випадково генерує коней.
+
+#Flower providers
+magicbees.allele.flowersbookshelf=Книги
+magicbees.allele.flowerssthaumcraft=Таумічні квіти
+magicbees.allele.flowersarsmagica=Екзотичні квіти
+magicbees.allele.flowersthaumcraftauranode=Вузол
+magicbees.allele.flowersbotania=Містичні квіти
+flowerprovider.flowersBookshelf=Книжкова полиця
+flowerprovider.flowersThaumcraft=Таумічні квіти
+flowerprovider.flowersArsmagica=Екзотичні квіти
+flowerprovider.flowersThaumcraftAura=Вузол
+flowerprovider.flowersBotania=Містичні квіти
+
+#Bee classifications
+classification.veiled=Приховані
+classification.veiled.description=Дивні види, розкидані по всьому світу, можуть мати здібності, що виходять за межі людського розуму.|Apinomicon
+classification.arcane=Таємні
+classification.arcane.description=Ці бджоли мають незрозумілу схильність до магії.|Apinomicon
+classification.supernatural=Надприродні
+classification.supernatural.description=Переставши бути звичайними бджолами, вони були пов'язані з багатьма дивними подіями.|Apinomicon
+classification.scholarly=Наукові
+classification.scholarly.description=Каста бджіл, які мають великий інтелект і дедуктивні здібності.|Apinomicon
+classification.skulking=Ховаючіся
+classification.skulking.description=Неприємні та злісні. Ставтеся до цієї групи з обережністю.|Apinomicon
+classification.magic=Обізнані
+classification.magic.description=Невідомо, чи є вони розумними, але вони мають дивовижну обізнаність про своє оточення.|Apinomicon
+classification.time=Часові
+classification.time.description=Розумно використовуючи подорожі в часі, ці бджоли встигають зробити вдвічі більше за один день.|Apinomicon
+classification.soul=Духовні
+classification.soul.description=It would be eerie to think that they collected the souls of the deceased.|Apinomicon
+classification.abominable=Огидні
+classification.abominable.description=Породжені у вогняних глибинах Пекла, в цих створіннях немає нічого приємного.|Apinomicon
+classification.Extrinsic=Невластиві
+classification.Extrinsic.description=Невідомо, чи ці істоти дали початок родині Apidae у цьому всесвіті, чи вони еволюціонували окремо.|Apinomicon
+classification.metallic=Металеві
+classification.metallic.description=Вони збирають фрагменти металу і об'єднують їх у більші порції.|Apinomicon
+classification.gem=Дорогоцінні
+classification.gem.description=Збирають у свої стільники уламки дорогоцінних самоцвітів.|Apinomicon
+classification.transmuting=Поліморфні
+classification.transmuting.description=Реальність здається дещо мінливою навколо бджіл цієї родини.|Apinomicon
+classification.thaumic=Таумічні
+classification.thaumic.description=Ці бджоли мають підвищену схильність до магії та аури.|Apinomicon
+classification.fleshy=М'ясні
+classification.fleshy.description=За допомогою невідомого механізму ці бджоли накопичують шматки м'яса тварин. Якимось чином це все ще їстівне.|Apinomicon
+classification.alchemical=Алхімічні
+classification.alchemical.description=Ці бджоли мають мінливу природу.|Apinomicon
+classification.essential=Есенціальні
+classification.essential.description=Ці бджоли мають підвищену схильність до аспектної магії.|Apinomicon
+classification.botanical=Ботанічні
+classification.botanical.description=Своєрідний варіант звичайних бджіл, вони, здається, мають підвищену прихильність до квітів.|Apinomicon
+
+
+#Thaumcraft Integration
+tc.aspect.tempus=Час, мить, вічність
+tc.research_category.MAGICBEES=Апімантія
+
+tc.research_name.MB_Root=Апімантія
+tc.research_text.MB_Root=[MB] Додавання блиску до вашого кайфу.
+tc.research_page.MB_Root.1=Ласкаво просимо до Апімансі! Як пасічник-початківець чарівних бджіл, ви повинні знати кілька речей, перш ніж зануритися в роботу. Як згадувалося у вашому листі про вступ до Академії суворих бджолярів, на вас чекає кілька нових інструментів, які ви можете відкрити для себе. До них відносяться деякі вдосконалені версії інструментів для лісового господарства, кожен з яких має свої особливості, а також нові рамки для ваших пасік. <LINE> Ви також можете відкрити для себе нові породи бджіл, якщо зможете вмовити їх жити в певних умовах. Лісовий Ескритуар допоможе вам відкрити їх і стати предметом заздрощів
+tc.research_page.MB_Root.2=вашим колишнім, немагічним колегам. Також зверніть увагу на кілька нових порід диких бджіл, що з'явилися: вони є ключем до поповнення магічних родоводів ваших маленьких крилатих підопічних.
+
+tc.research_name.MB_LoreFragment=Фрагменти історії
+tc.research_text.MB_LoreFragment=[MB] Дослідження? Більше схоже на BEE-пошук!
+tc.research_page.MB_LoreFragment.1=Експериментуючи з породами бджіл, ви можете натрапити на штам, чиї інтелектуальні здібності співпадають з вашими. Ну, можливо, хоч це і малоймовірно. Цілком можливо, що вони можуть розкопати якусь незрозумілу згадку або фрагмент інформації, яку ваш великий інтелект міг пропустити, досліджуючи великі таємниці Всесвіту. <BR> Якщо ваші корисні друзі, що дзижчать, знайдуть для вас такий предмет, можливо, вдасться об'єднати ці уривки в щось більш цілісне.
+
+tc.research_name.MB_FrameMagic=Магічний кадр
+tc.research_text.MB_FrameMagic=[MB] Впровадження магії в контекст бджільництва
+tc.research_page.MB_FrameMagic.1=Магічна рамка - це просте покращення ваших звичайних необроблених рамок. Досить прості у виготовленні, вони здатні прослужити на пасіці втричі довше, ніж необроблені рамки, перш ніж стануть непридатними для використання. Чарівні властивості Магічної рамки дозволяють використовувати її з деякими особливими есенціями, задіяними в Апімансії, там, де інші рамки відкинули б вливання магії.
+
+tc.research_name.MB_Scoop=Тауміумний совок
+tc.research_text.MB_Scoop=[MB] Поводитися з ним обережно.
+tc.research_page.MB_Scoop.1=Звичайні совки крихкі і схильні до зламу. Як авторитет в Апімансі, ви можете зробити краще. Додавши трохи тауму в ручку та обмотавши її шнурком, ваш новий совок прослужить втричі довше! <BR> Крім того, таумій у приладі буде сприймати заклинання "Ремонт".
+
+tc.research_name.MB_Grafter=Таумієвий графтер
+tc.research_text.MB_Grafter=[MB] Саджанці на всі випадки життя.
+tc.research_page.MB_Grafter.1=Прості прищеплювачі майже марнотратно крихкі, і хоча Перевірені прищеплювачі корисні, рідкісність смарагдів робить їх закупівлю неприємною справою. Рішення? Зробити його власноруч! <BR> Тауміумний графтер, як і тауміумний совок, є міцнішою, чарівною версією найпростішого інструменту мага-деревознавця. Однак будьте обережні, бо хоча на ковальське знаряддя можна застосувати заклинання Відновлення, його незвичайні властивості роблять його використання виснажливим.
+
+tc.research_name.MB_EssenceLife=Сутність фальшивого життя
+tc.research_text.MB_EssenceLife=[MB] Троянда з іншим ім'ям. . .
+tc.research_page.MB_EssenceLife.1=Проста у створенні за допомогою магії, ця есенція має незвичайні властивості під впливом бджіл. У поєднанні зі звичайною пасічною рамкою вона значно подовжує термін служби робочого вулика.
+
+tc.research_name.MB_EssenceDeath=Есенція неглибокої могили
+tc.research_text.MB_EssenceDeath=[MB] Не зовсім шість футів під землею.
+tc.reseacrh_page.MB_EssenceDeath.1=Сутність неглибокої могили спричиняє смерть багатьох ... "природних" істот, які блукають світом: Зомбі, Скелети, і тому подібні речі. Вплив цієї енергії на бджіл призводить до того, що вони стають повільними та млявими, а також скорочує тривалість їхнього життя. Деякі бджолярі вважають використання рамок, просочених цими сутностями, жорстоким, проте інші розглядають це як природну частину нормального бджільництва, з метою створення своєї ідеальної породи бджіл колись протягом ЇХ життя. <BR> Гільдія безпеки апімансерів рекомендує обробляти їх за допомогою телекенізису або дуже довгих щипців.
+
+tc.research_name.MB_EssenceArmor=Есенція вічної міцності
+tc.research_text.MB_EssenceArmor=[MB] Гума для вашого клею
+tc.research_page.MB_EssenceArmor.1=Це дистильована есенція захисту, що триватиме вічно, або поки магія, що зберігається в ній, не ослабне і врешті-решт не зламається. Але до тих пір вона непереможна. Здебільшого. <BR> Хоча Магічні рамки корисні, вони трохи крихкі. Ця есенція виводить чари, які ви вплітаєте в Магічні рамки, на абсолютно новий рівень. Поєднайте есенцію з магічною рамкою, і вона матиме значно довший термін служби.
+tc.research_name.MB_EssenceUnstable=Сутність мінливої сталості
+tc.research_text.MB_EssenceUnstable=[MB] Впевненість у ненадійності
+tc.research_page.MB_EssenceUnstable.1=Нестабільна за своєю природою, Сутність мінливої перманентності має побічний ефект, що призводить до того, що зазвичай стабільні об'єкти та системи стають дещо ненадійними. Хоча це здебільшого може бути поганим явищем, апімансери виявили, що вплив сутності на вулик має подвійний ефект: бджоли починають працювати швидше, а їхнє потомство має вищий рівень мутацій.
+
+tc.research_name.MB_EssenceTime=Есенція втраченого часу
+tc.research_text.MB_EssenceTime=[MB] Немає часу, подібного до миті
+tc.research_page.MB_EssenceTime.1=Час - мінлива річ. Він приходить і йде, але куди саме він йде? Як шановний тауматург, ми з'явилася можливість ловити ці змарновані миті і зберігати їх у магічній формі. Отже, тепер, коли є можливість зібрати зайвий час зі світу, здається цілком доречним використати його там, де він буде корисним. Наразі було б занадто небезпечно намагатися отримати доступ до цих моментів самостійно, але, можливо, було б просто дозволити вашим бджолам доступ до цього невикористаного згустку часу. <BR> Поєднання есенції з Чарівною рамкою, як зазвичай, буде достатньо, щоб продовжити тривалість життя бджіл у вашому господарстві в кілька разів.
+
+tc.research_name.MB_DimensionalSingularity=Вимірна сингулярність
+tc.research_text.MB_DimensionalSingularity=[MB] Квантовий потік для них, необмежений простір для вас
+tc.research_page.MB_DimensionalSingularity.1=Хоча це може здатися схожим на Портативну Діру, вона слугує двостороннім зв'язком з іншим місцем, яке... ймовірно, є безлюдним. Ці сингулярності можна буде використовувати для зберігання матеріалів за межами вашого розуміння виміру - що, звісно, означає, що вони не будуть захаращувати ваш інвентар. Зараз вони не особливо корисні, але мають бути способи розкрити їхній потенціал.
+
+tc.research_name.MB_EssenceOblivion=Сутність презирливого забуття
+tc.research_text.MB_EssenceOblivion=[MB] Відкинутий зі злістю
+tc.research_page.MB_EssenceOblivion.1=Селекція бджіл на мутації може бути дратівливою, особливо для довгоживучих видів. Проявивши трохи кмітливості і лише найменший натяк на самовдоволення, ви знайшли спосіб використовувати Вимірну сингулярність таким чином, що вона лише висмоктує життєву силу ваших крихітних літаючих друзів, крапля за краплею. Ну, можливо, значну кількість одразу. Напевно, це не вплине на них надто сильно. <BR> Можливо, буде дещо складно отримати більше, ніж одне з §5Драконових яєць§0, необхідних для того, щоб отримати більше, ніж одне з цих яєць. Можливо, існує вид бджіл, який може допомогти з цим обмеженням.
+
+tc.research_name.MB_VisAuraProvider=Підсилювач пасіки Vis
+tc.research_text.MB_VisAuraProvider=[MB] Vis? А як щодо Bis?
+tc.research_page.MB_VisAuraProvider.1=Наповнення незвичайного пилку вісом і поєднання його з золотом створює незвичайний кристал, який, при згодовуванні вісу з вузла аури, створює енергійну ауру, до якої природно притягуються бджоли, коли вони налаштовані на навколишнє середовище в Чарівній пасіці.
+
+#Botania Lexicon entries
+magicbees.botania.lexicon.subtitle=[Чарівні бджоли]
+
+magicbees.botania.lexicon.manasteelTools.title=Інструменти натураліста зі сталі Manasteel
+magicbees.botania.lexicon.manasteelTools.0= Незвичайні властивості Manasteel добре підходять для інструментів натураліста. За допомогою &1Manasteel Scoop&0 можна ефективно збирати врожай у вуликах, а &1Manasteel Grafter&0 є довговічною заміною звичайним бронзовим прищеплювачам. Звісно, обидва інструменти мають здатність регенерувати ману. Для досягнення найкращих результатів поєднуйте інструмент з Живим деревом.
+magicbees.botania.lexicon.manasteelScoop=&1Manasteel Scoop&0
+magicbees.botania.lexicon.manasteelGrafter=&1Manasteel Grafter&0
+
+magicbees.botania.lexicon.beeAlfheim.title=Апімансія Альфгейма
+magicbees.botania.lexicon.beeAlfheim.trade=Торгівля для &bAlfheim Drones&0
+magicbees.botania.lexicon.beeAlfheim.0=&1Ельфійські Бджолярі&0 прагнуть відкрити для себе принади бджіл вашого світу, і особливо зацікавлені в &1Мрійливих Дронах&0, які ви можете надати. Натомість вони обміняють їх на &bAlfheim Drones&0, єдиних бджіл, які існують в Альфгаймі.
+
+magicbees.botania.lexicon.beegonia.0=Дрони - це основа майбутнього здорової колонії, але насправді вони можуть почати просто накопичуватися до того моменту, коли ви не знатимете, що з ними робити. <&1Beegonia&0 - це рішення проблеми перенаселеності! Просто киньте вільні дрони в їхнє оточення, і вони відновлять життєву силу всередині дрона і перетворять її на ману! Вони не дуже вибагливі, і будуть
+magicbees.botania.lexicon.beegonia.1= вироблятимуть постійну кількість мани під час роботи, хоча здається, що більш "складні" бджоли дають більше мани, ніж звичайні, що б це не означало.
+magicbees.botania.lexicon.beegonia.crafting=Елегантне рішення для Syncrostrike
+magicbees.botania.lexicon.beegonia.2=Гаразд. Або це, або &2Beenus Fly Trap&0, але з цим є свої проблеми.
+
+magicbees.botania.lexicon.hiveacynth.0=Пошук нових бджіл для вашої сім'ї може бути трохи болючим. На щастя, ми можемо використовувати спогади про квіти для відтворення бджіл з точністю до 74%! Можливо.<br> &1Hiveacynth&0 поглинає ману з найближчого пулу мани, а коли її назбирається достатньо, починає перетворювати її на життєву есенцію і виробляє бджолу! Здається, що вид дещо випадковий, хоча це лише "мирські" бджоли.
+magicbees.botania.lexicon.hiveacynth.1=коли-небудь будуть вироблятися, і приблизно пропорційно до того, як вони зустрічаються в дикій природі.<br>Іноді квітка дасть собі відпочити, і вироблятиме славетну спадкоємицю, а не вульгарного трутня. Сигнал червоного каменю завадить &1Hiveacynth&0 перетворити ману на життєву есенцію.
+magicbees.botania.lexicon.hiveacynth.crafting=> beesbeesbees.com
+
+magicbees.botania.lexicon.hibeescus.0=&5Ignoble&0 бджоли, хоч і такі ж корисні, як і їхні &2Pristine&0 родичі, мають лише один недолік - після 100 поколінь вони починають хворіти, слабшати і можуть вимерти у вас на очах, якраз перед тим, як ви отримаєте ту жадану мутацію, що зведе з розуму ваших колег-пасічників від заздрощів. Здається, що, зрештою, є рішення для цієї проблеми! За наявності достатньої кількості мани, часу та за допомогою особливого
+magicbees.botania.lexicon.hibeescus.1=&1Hibeescus&0 на вашому боці, ви зможете видалити безліч генетичних вад у &5Ignoble&0 диких бджіл. Наберіться терпіння, оскільки &1Hibeescus&0 виконує свою магію дуже повільно, до 2 повних днів! <br>Також рекомендується економно використовувати його силу, оскільки він неймовірно вимогливий до мани. Застосування сигналу червоного каменю до його коріння не дозволить йому поглинати нових принцес або королев, але не
+magicbees.botania.lexicon.hibeescus.2=зупинити операцію генетичного очищення, якщо вона розпочалася.
+magicbees.botania.lexicon.hibeescus.crafting=Тільки для використання Злостивими людьми.
+
+magicbees.botania.lexicon.manaBooster.0=Чарівна пасіка - це природний спосіб змусити бджіл працювати швидше, але він трохи... обмежений. На щастя, властивості живого каменю та пелюсток мають властивість заряджати бджіл енергією, змушуючи їх виробляти більше. Просто забезпечте &1Mana Apiary Booster&0 постійним запасом мани, і він буде підтримувати ефективну роботу пасік.
+magicbees.botania.lexicon.manaBooster.crafting=Дзижчить від мани!
+
+
+for.bees.custom.drone.magicbees.speciesMystical=Містичний трутень
+for.bees.custom.drone.magicbees.speciesSorcerous=Чаклунський трутень
+for.bees.custom.drone.magicbees.speciesUnusual=Незвичайний трутень
+for.bees.custom.drone.magicbees.speciesAttuned=Налаштований трутень
+for.bees.custom.drone.magicbees.speciesEldritch=Старовинний трутень
+for.bees.custom.drone.magicbees.speciesEsoteric=Езотеричний трутень
+for.bees.custom.drone.magicbees.speciesMysterious=Загадковий трутень
+for.bees.custom.drone.magicbees.speciesArcane=Таємничий трутень
+for.bees.custom.drone.magicbees.speciesCharmed=Чарівний трутень
+for.bees.custom.drone.magicbees.speciesEnchanted=Зачарований трутень
+for.bees.custom.drone.magicbees.speciesSupernatural=Надприродній трутень
+for.bees.custom.drone.magicbees.speciesEthereal=Потойбічний трутень
+for.bees.custom.drone.magicbees.speciesWatery=Водяний трутень
+for.bees.custom.drone.magicbees.speciesEarthy=Земляний трутень
+for.bees.custom.drone.magicbees.speciesFirey=Вогняний трутень
+for.bees.custom.drone.magicbees.speciesWindy=Вітряний трутень
+for.bees.custom.drone.magicbees.speciesPupil=Учнівський трутень
+for.bees.custom.drone.magicbees.speciesScholarly=Розумний трутень
+for.bees.custom.drone.magicbees.speciesSavant=Вчений трутень
+for.bees.custom.drone.magicbees.speciesAware=Обізнаний трутень
+for.bees.custom.drone.magicbees.speciesSpirit=Спіритичний трутень
+for.bees.custom.drone.magicbees.speciesSoul=Душевний трутень
+for.bees.custom.drone.magicbees.speciesSkulking=Відлюдницький трутень
+for.bees.custom.drone.magicbees.speciesGhastly=Огидний трутень
+for.bees.custom.drone.magicbees.speciesSpidery=Павучий трутень
+for.bees.custom.drone.magicbees.speciesSmouldering=Тліючий трутень
+for.bees.custom.drone.magicbees.speciesTimely=Своєчасний трутень
+for.bees.custom.drone.magicbees.speciesLordly=Гармонічний трутень
+for.bees.custom.drone.magicbees.speciesDoctoral=Докторський трутень
+for.bees.custom.drone.magicbees.speciesInfernal=Пекельний трутень
+for.bees.custom.drone.magicbees.speciesHateful=Ненависний трутень
+for.bees.custom.drone.magicbees.speciesSpiteful=Злопам'ятний трутень
+for.bees.custom.drone.magicbees.speciesWithering=Висушуючий трутень
+for.bees.custom.drone.magicbees.speciesOblivion=Забутий трутень
+for.bees.custom.drone.magicbees.speciesNameless=Безіменний трутень
+for.bees.custom.drone.magicbees.speciesAbandoned=Покинутий трутень
+for.bees.custom.drone.magicbees.speciesForlorn=Занедбаний трутень
+for.bees.custom.drone.magicbees.speciesDraconic=Драконічний трутень
+for.bees.custom.drone.magicbees.speciesIron=Залізний трутень
+for.bees.custom.drone.magicbees.speciesGold=Золотий трутень
+for.bees.custom.drone.magicbees.speciesCopper=Мідний трутень
+for.bees.custom.drone.magicbees.speciesTin=Олов'яний трутень
+for.bees.custom.drone.magicbees.speciesSilver=Срібний трутень
+for.bees.custom.drone.magicbees.speciesLead=Свинцевий трутень
+for.bees.custom.drone.magicbees.speciesAluminium=Алюмінієвий трутень
+for.bees.custom.drone.magicbees.speciesArdite=Ардитовий трутень
+for.bees.custom.drone.magicbees.speciesCobalt=Кобальтовий трутень
+for.bees.custom.drone.magicbees.speciesManyullyn=Манюліновий трутень
+for.bees.custom.drone.magicbees.speciesOsmium=Осмієвий трутень
+for.bees.custom.drone.magicbees.speciesSilicon=Кремнієвий трутень
+for.bees.custom.drone.magicbees.speciesCertus=Цертусний трутень
+for.bees.custom.drone.magicbees.speciesFluix=Флюксовий трутень
+for.bees.custom.drone.magicbees.speciesDiamond=Діамантовий трутень
+for.bees.custom.drone.magicbees.speciesEmerald=Смарагдовий трутень
+for.bees.custom.drone.magicbees.speciesApatite=Апатитовий трутень
+for.bees.custom.drone.magicbees.speciesMutable=Мінливий трутень
+for.bees.custom.drone.magicbees.speciesTransmuting=Трансмутуючий трутень
+for.bees.custom.drone.magicbees.speciesCrumbling=Руйнуючий трутень
+for.bees.custom.drone.magicbees.speciesInvisible=Невидимий трутень
+
+for.bees.custom.drone.magicbees.speciesTCAir=Аер трутень
+for.bees.custom.drone.magicbees.speciesTCFire=Ігніс трутень
+for.bees.custom.drone.magicbees.speciesTCWater=Аква трутень
+for.bees.custom.drone.magicbees.speciesTCEarth=Солум трутень
+for.bees.custom.drone.magicbees.speciesTCOrder=Впорядкований трутень
+for.bees.custom.drone.magicbees.speciesTCEntropy=Хаотичний трутень
+for.bees.custom.drone.magicbees.speciesTCVis=Віс трутень
+for.bees.custom.drone.magicbees.speciesTCRejuvenating=Омолоджуючий трутень
+for.bees.custom.drone.magicbees.speciesTCEmpowering=Посилений трутень
+for.bees.custom.drone.magicbees.speciesTCNexus=Нексус трутень
+for.bees.custom.drone.magicbees.speciesTCTaint=Плямистий трутень
+for.bees.custom.drone.magicbees.speciesTCHungry=Ненажерливий трутень
+for.bees.custom.drone.magicbees.speciesTCVoid=Пустотний трутень
+for.bees.custom.drone.magicbees.speciesTCWispy=Слизький трутень
+for.bees.custom.drone.magicbees.speciesEEMinium=Змінний трутень
+for.bees.custom.drone.magicbees.speciesAMEssence=Есенційний трутень
+for.bees.custom.drone.magicbees.speciesAMQuintessence=Квінтесенційний трутень
+for.bees.custom.drone.magicbees.speciesAMEarth=Терра трутень
+for.bees.custom.drone.magicbees.speciesAMAir=Ефірний трутень
+for.bees.custom.drone.magicbees.speciesAMFire=Палаючий трутень
+for.bees.custom.drone.magicbees.speciesAMWater=Водянистий трутень
+for.bees.custom.drone.magicbees.speciesAMLightning=Блискавичний трутень
+for.bees.custom.drone.magicbees.speciesAMPlant=Рослинний трутень
+for.bees.custom.drone.magicbees.speciesAMIce=Льодовиковий трутень
+for.bees.custom.drone.magicbees.speciesAMMagma=Лавовий трутень
+for.bees.custom.drone.magicbees.speciesAMArcane=Таємничий трутень
+for.bees.custom.drone.magicbees.speciesAMVortex=Вихровий трутень
+for.bees.custom.drone.magicbees.speciesAMWight=Могутній трутень
+for.bees.custom.drone.magicbees.speciesTEBlizzy=Зимний трутень
+for.bees.custom.drone.magicbees.speciesTEGelid=Крижаний трутень
+for.bees.custom.drone.magicbees.speciesTEDante=Данте трутень
+for.bees.custom.drone.magicbees.speciesTEPyro=Піро трутень
+for.bees.custom.drone.magicbees.speciesTEShocking=Шокуючий трутень
+for.bees.custom.drone.magicbees.speciesTEAmped=Ампед трутень
+for.bees.custom.drone.magicbees.speciesTEGrounded=Заземлений трутень
+for.bees.custom.drone.magicbees.speciesTERocking=Роккі трутень
+for.bees.custom.drone.magicbees.speciesElectrum=Електрумовий трутень
+for.bees.custom.drone.magicbees.speciesPlatinum=Платиновий трутень
+for.bees.custom.drone.magicbees.speciesNickel=Нікелевий трутень
+for.bees.custom.drone.magicbees.speciesInvar=Інваровий трутень
+for.bees.custom.drone.magicbees.speciesBronze=Бронзовий трутень
+for.bees.custom.drone.magicbees.speciesTECoal=Вугільний трутень
+for.bees.custom.drone.magicbees.speciesTEDestabilized=Дестабілізований трутень
+for.bees.custom.drone.magicbees.speciesTELux=Люкс трутень
+for.bees.custom.drone.magicbees.speciesTEWinsome=Привабливий трутень
+for.bees.custom.drone.magicbees.speciesTEEndearing=Стильний трутень
+for.bees.custom.drone.magicbees.speciesRSAFluxed=Флаксовий трутень
+for.bees.custom.drone.magicbees.speciesBOTRooted=Підкорневий трутень
+for.bees.custom.drone.magicbees.speciesBOTBotanic=Ботанічний трутень
+for.bees.custom.drone.magicbees.speciesBOTBlossom=Цвітучий трутень
+for.bees.custom.drone.magicbees.speciesBOTFloral=Квітковий трутень
+for.bees.custom.drone.magicbees.speciesBOTVazbee=Вазбі трутень
+for.bees.custom.drone.magicbees.speciesBOTSomnolent=Сонний трутень
+for.bees.custom.drone.magicbees.speciesBOTDreaming=Мрійливий трутень
+for.bees.custom.drone.magicbees.speciesBOTAlfheim=Альфгейм трутень
+for.bees.custom.drone.magicbees.speciesAESkystone=Скайстоун трутень
+for.bees.custom.drone.magicbees.speciesTCPure=Чистий трутень
+
+for.bees.custom.drone.magicbees.speciesBigbad=Великий Злий трутень
+for.bees.custom.drone.magicbees.speciesBrainy=Інтелектуальний трутень
+for.bees.custom.drone.magicbees.speciesBatty=Кажановий трутень
+for.bees.custom.drone.magicbees.speciesChicken=Курячий трутень
+for.bees.custom.drone.magicbees.speciesBeef=Яловичий трутень
+for.bees.custom.drone.magicbees.speciesPork=Свинячий трутень
+for.bees.custom.drone.magicbees.speciesSheepish=Овечий трутень
+for.bees.custom.drone.magicbees.speciesCatty=Котячий трутень
+for.bees.custom.drone.magicbees.speciesHorse=Кінний трутень
+
+
+
+
+
+for.bees.custom.beealyzer.drone.magicbees.speciesMystical=Містичний
+for.bees.custom.beealyzer.drone.magicbees.speciesSorcerous=Чаклунський
+for.bees.custom.beealyzer.drone.magicbees.speciesUnusual=Незвичайний
+for.bees.custom.beealyzer.drone.magicbees.speciesAttuned=Приученный
+for.bees.custom.beealyzer.drone.magicbees.speciesEldritch=Древний
+for.bees.custom.beealyzer.drone.magicbees.speciesEsoteric=Тайный
+for.bees.custom.beealyzer.drone.magicbees.speciesMysterious=Таинственный
+for.bees.custom.beealyzer.drone.magicbees.speciesArcane=Магический
+for.bees.custom.beealyzer.drone.magicbees.speciesCharmed=Заколдованный
+for.bees.custom.beealyzer.drone.magicbees.speciesEnchanted=Зачарованный
+for.bees.custom.beealyzer.drone.magicbees.speciesSupernatural=Сверхъестественный
+for.bees.custom.beealyzer.drone.magicbees.speciesEthereal=Эфирный
+for.bees.custom.beealyzer.drone.magicbees.speciesEarthen=Водяний трутень
+for.bees.custom.beealyzer.drone.magicbees.speciesEarthen=Земляной
+for.bees.custom.beealyzer.drone.magicbees.speciesFirey=Огненный
+for.bees.custom.beealyzer.drone.magicbees.speciesWindy=Ветряный
+for.bees.custom.beealyzer.drone.magicbees.speciesPupil=Подопечный
+for.bees.custom.beealyzer.drone.magicbees.speciesScholarly=Учёный
+for.bees.custom.beealyzer.drone.magicbees.speciesSavant=Сведущий
+for.bees.custom.beealyzer.drone.magicbees.speciesAware=Памятный
+for.bees.custom.beealyzer.drone.magicbees.speciesSpirit=Духовный
+for.bees.custom.beealyzer.drone.magicbees.speciesSoul=Душевный
+for.bees.custom.beealyzer.drone.magicbees.speciesSkulking=Прячущийся
+for.bees.custom.beealyzer.drone.magicbees.speciesGhastly=Ужасный
+for.bees.custom.beealyzer.drone.magicbees.speciesSpidery=Паучий
+for.bees.custom.beealyzer.drone.magicbees.speciesSmouldering=Тлеющий
+for.bees.custom.beealyzer.drone.magicbees.speciesTimely=Временный
+for.bees.custom.beealyzer.drone.magicbees.speciesLordly=Роскошный
+for.bees.custom.beealyzer.drone.magicbees.speciesDoctoral=Докторский
+for.bees.custom.beealyzer.drone.magicbees.speciesInfernal=Адский
+for.bees.custom.beealyzer.drone.magicbees.speciesHateful=Ненавистный
+for.bees.custom.beealyzer.drone.magicbees.speciesSpiteful=Злопамятный
+for.bees.custom.beealyzer.drone.magicbees.speciesWithering=Иссушающий
+for.bees.custom.beealyzer.drone.magicbees.speciesOblivion=Забвенный
+for.bees.custom.beealyzer.drone.magicbees.speciesNameless=Безымянный
+for.bees.custom.beealyzer.drone.magicbees.speciesAbandoned=Брошенный
+for.bees.custom.beealyzer.drone.magicbees.speciesForlorn=Одинокий
+for.bees.custom.beealyzer.drone.magicbees.speciesDraconic=Драконий
+for.bees.custom.beealyzer.drone.magicbees.speciesIron=Железистый
+for.bees.custom.beealyzer.drone.magicbees.speciesGold=Золотоносный
+for.bees.custom.beealyzer.drone.magicbees.speciesCopper=Медный
+for.bees.custom.beealyzer.drone.magicbees.speciesTin=Оловянный
+for.bees.custom.beealyzer.drone.magicbees.speciesSilver=Серебряный
+for.bees.custom.beealyzer.drone.magicbees.speciesLead=Свинцовый
+for.bees.custom.beealyzer.drone.magicbees.speciesAluminium=Алюминиевый
+for.bees.custom.beealyzer.drone.magicbees.speciesArdite=Ардитовый
+for.bees.custom.beealyzer.drone.magicbees.speciesCobalt=Кобальтовый
+for.bees.custom.beealyzer.drone.magicbees.speciesManyullyn=Мануллиновый
+for.bees.custom.beealyzer.drone.magicbees.speciesDiamond=Алмазный
+for.bees.custom.beealyzer.drone.magicbees.speciesEmerald=Изумрудный
+for.bees.custom.beealyzer.drone.magicbees.speciesApatite=Апатитовый
+for.bees.custom.beealyzer.drone.magicbees.speciesMutable=Изменчивый
+for.bees.custom.beealyzer.drone.magicbees.speciesTransmuting=Трансмутирующий
+for.bees.custom.beealyzer.drone.magicbees.speciesCrumbling=Разрушающий
+for.bees.custom.beealyzer.drone.magicbees.speciesInvisible=Невидимый
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
