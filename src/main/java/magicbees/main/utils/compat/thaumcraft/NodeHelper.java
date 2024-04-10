@@ -13,7 +13,10 @@ import net.minecraft.world.ChunkPosition;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.Chunk;
 
+import com.kentington.thaumichorizons.common.tiles.TileSyntheticNode;
+
 import magicbees.main.Config;
+import magicbees.main.utils.compat.ThaumicHorizonsHelper;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.api.nodes.INode;
@@ -41,6 +44,9 @@ public class NodeHelper {
                 ((Map<ChunkPosition, TileEntity>) chunk.chunkTileEntityMap).values());
         Collections.shuffle(tileEntities);
         for (TileEntity entity : tileEntities) {
+            if (ThaumicHorizonsHelper.isActive() && entity instanceof TileSyntheticNode) {
+                continue;
+            }
             if (entity instanceof INode) {
                 Vec3 tePos = Vec3.createVectorHelper(entity.xCoord, entity.yCoord, entity.zCoord);
                 Vec3 result = apiaryPos.subtract(tePos);
@@ -61,6 +67,9 @@ public class NodeHelper {
             List<TileEntity> tileEntities = new ArrayList<TileEntity>(
                     ((Map<ChunkPosition, TileEntity>) chunk.chunkTileEntityMap).values());
             for (TileEntity entity : tileEntities) {
+                if (ThaumicHorizonsHelper.isActive() && entity instanceof TileSyntheticNode) {
+                    continue;
+                }
                 if (entity instanceof INode) {
                     Vec3 tePos = Vec3.createVectorHelper(entity.xCoord, entity.yCoord, entity.zCoord);
                     Vec3 result = apiaryPos.subtract(tePos);

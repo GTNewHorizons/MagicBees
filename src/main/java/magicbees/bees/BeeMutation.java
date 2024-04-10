@@ -488,6 +488,11 @@ public class BeeMutation {
                     BeeSpecies.SUPERNATURAL.getSpecies(),
                     BeeSpecies.TC_CHAOS.getGenome(),
                     8).requireResource(ThaumcraftHelper.crystal, ThaumcraftHelper.ShardType.CHAOS.ordinal());
+            beeMutationFactory.createMutation(
+                    BeeSpecies.TC_ORDER.getSpecies(),
+                    BeeSpecies.TC_CHAOS.getSpecies(),
+                    BeeSpecies.TC_ESSENTIA.getGenome(),
+                    8).requireResource(ThaumcraftHelper.crystal, ThaumcraftHelper.ShardType.CHAOS.ordinal());
 
             beeMutationFactory.createMutation(
                     BeeSpecies.ETHEREAL.getSpecies(),

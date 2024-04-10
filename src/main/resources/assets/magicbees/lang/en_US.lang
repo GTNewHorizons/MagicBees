@@ -38,6 +38,7 @@ item.beeRing.name=Collector's Bee Ring
 tile.effectJar.name=Bee Collector's Jar
 tile.magicApiary.name=Magic Apiary
 tile.visAuraProvider.name=Vis Apiary Booster
+tile.apimancersDrainer.name=Apimancer's Drainer
 tile.manaAuraProvider.name=Mana Apiary Booster
 tile.hive.curious.name=Curious Hive
 tile.hive.unusual.name=Unusual Hive
@@ -403,6 +404,8 @@ magicbees.speciesTCOrder=Ordered
 magicbees.speciesTCOrder.description=Their combs are nearly perfect, each part mirroring the pattern of the whole.|Apinomicon
 magicbees.speciesTCChaos=Chaotic
 magicbees.speciesTCChaos.description=The social structure of their hives seems to vary day by day, making it more flexible and resillient than others, but significantly more unpredictable.|Apinomicon
+magicbees.speciesTCEssentia=Essentia
+magicbees.speciesTCEssentia.description="Why spam Essentia Condensers when you can just use bees?"|Quantumly, Condenser Enjoyer
 magicbees.speciesTCVis=Vis
 magicbees.speciesTCVis.description="They can feel changes in the aura, but are not yet able to affect it."|Azanor, research notes
 magicbees.speciesTCRejuvenating=Rejuvenating
@@ -681,6 +684,10 @@ tc.research_page.MB_EssenceOblivion.1=Breeding bees for mutations can be aggriva
 tc.research_name.MB_VisAuraProvider=Vis Apiary Booster
 tc.research_text.MB_VisAuraProvider=Vis? What about Bis?
 tc.research_page.MB_VisAuraProvider.1=Infusing Unusual Pollen with vis and combining it with gold creates an unusual crystal that, when fed centivis from an aura node, creates an energizing aura that bees are naturally attracted to when attuned to the environment within a Magic Apiary.<LINE>§3Aqua§0 CV will double mutation rate<BR>§8Perditio§0 CV will halve lifespan<BR>§6Aer§0 CV will double production rate
+
+tc.research_name.MB_ApimancersDrainer=Apimancer's Drainer
+tc.research_text.MB_ApimancersDrainer=How long will your queen last?
+tc.research_page.MB_ApimancersDrainer.1=The Apimancer's Drainer is an innovative device in the field of Apimancy, designed to extract essentia from the life force of bees. It is placed beneath an apiary, establishing a direct connection with the apiary above.<BR>To determine the type of essentia it produces, the Drainer is attuned by tapping it with the desired essentia.<BR>Once attuned, the Drainer converts the life energy of the queen into the selected essentia...
 
 tc.research_name.MB_ScoopVoid=Void Scoop
 tc.research_text.MB_ScoopVoid=The dark net

@@ -73,6 +73,7 @@ public class MagicBees {
         proxy.registerRenderers();
 
         this.modConfig.saveConfigs();
+        this.modConfig.setupThaumicEnergistics();
 
         CraftingManager.setupCrafting();
         CraftingManager.registerLiquidContainers();

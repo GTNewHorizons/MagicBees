@@ -836,6 +836,15 @@ public class BeeGenomeManager {
         return genome;
     }
 
+    public static IAllele[] getTemplateTCEssentia() {
+        IAllele[] genome = getTemplateTCBase();
+
+        genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.TC_ESSENTIA.getSpecies();
+        genome[EnumBeeChromosome.FERTILITY.ordinal()] = Allele.getBaseAllele("fertilityNormal");
+
+        return genome;
+    }
+
     public static IAllele[] getTemplateTCAir() {
         IAllele[] genome = getTemplateTCBase();
 

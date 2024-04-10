@@ -12,7 +12,11 @@ import WayofTime.alchemicalWizardry.api.soulNetwork.SoulNetworkHandler;
 import WayofTime.alchemicalWizardry.common.items.EnergyItems;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import forestry.api.apiculture.*;
+import forestry.api.apiculture.IBee;
+import forestry.api.apiculture.IBeeGenome;
+import forestry.api.apiculture.IBeeHousing;
+import forestry.api.apiculture.IBeeModifier;
+import forestry.api.apiculture.IHiveFrame;
 import magicbees.main.CommonProxy;
 import magicbees.main.utils.TabMagicBees;
 
@@ -44,7 +48,7 @@ public class ItemBloodBaseFrame extends EnergyItems implements IHiveFrame {
 
         @Override
         public float getProductionModifier(IBeeGenome genome, float currentModifier) {
-            return 1f;
+            return 2f; // buffed post additive production change
         }
 
         @Override

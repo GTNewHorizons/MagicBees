@@ -6,8 +6,8 @@ import magicbees.main.utils.LocalizationManager;
 
 public enum HiveFrameType implements IBeeModifier {
 
-    MAGIC("Magic", 240, 1f, 1f, 1f, 1f, 0.6f), // production was 2x, now +1
-    RESILIENT("Resilient", 800, 1f, 1f, 1f, 1f, 0.5f), // production was 2x, now +1
+    MAGIC("Magic", 240, 1f, 1f, 1f, 2f, 0.6f), // buffed post additive prod change
+    RESILIENT("Resilient", 800, 1f, 1f, 1f, 2f, 0.5f), // buffed post additive prod change
     GENTLE("Gentle", 200, 1f, 0.7f, 1.5f, 0.4f, 0.01f), // production was 1.4x, now +0.4
     METABOLIC("Metabolic", 130, 1f, 1.8f, 1f, 0.2f, 1f), // production was 1.2x, now +0.2
     NECROTIC("Necrotic", 280, 1f, 1f, 0.3f, -0.25f, 1.2f), // production was 0.75x, now -0.25

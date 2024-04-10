@@ -33,151 +33,11 @@ import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchItem;
 import thaumcraft.api.research.ResearchPage;
+import thaumcraft.common.config.ConfigBlocks;
 
 public class ThaumcraftHelper implements IModHelper {
 
-    public enum MiscResource {
-        ALUMENTUM,
-        NITOR,
-        THAUMIUM,
-        QUICKSILVER,
-        MAGIC_TALLOW,
-        BRAIN_DEPRECATED,
-        AMBER,
-        ENCHANTED_FABRIC,
-        VIS_FILTER,
-        KNOWLEDGE_FRAGMENT,
-        MIRRORED_GLASS,
-        TAINTED_GOO,
-        TAINTED_TENDRIL,
-        JAR_LABEL,
-        SALIS,
-        CHARM,
-        VOID_INGOT,
-        VOID_SEED,
-        COIN,;
-    }
-
-    public enum NuggetType {
-        IRON,
-        COPPER,
-        TIN,
-        SILVER,
-        LEAD,
-        QUICKSILVER,
-        THAUMIUM,
-        VOID_METAL,
-        _8,
-        _9,
-        _10,
-        _11,
-        _12,
-        _13,
-        _14,
-        _15,
-        NATIVE_IRON,
-        NATIVE_COPPER,
-        NATIVE_TIN,
-        NATIVE_SILVER,
-        NATIVE_LEAD,
-        NATIVE_CINNABAR,
-        _22,
-        _23,
-        _24,
-        _25,
-        _26,
-        _27,
-        _28,
-        _29,
-        _30,
-        NATIVE_GOLD,;
-    }
-
-    public enum ShardType {
-        AIR,
-        FIRE,
-        WATER,
-        EARTH,
-        ORDER,
-        CHAOS,
-        BALANCED,;
-    }
-
-    public enum MetalDeviceType {
-        CRUCIBLE,
-        ALEMBIC,
-        VIS_CHARGE_RELAY,
-        ADVANCED_ALCHEMICAL_CONSTRUCT,
-        _4,
-        ITEM_GRATE,
-        _6,
-        ARCANE_LAMP,
-        LAMP_OF_GROWTH,
-        ALCHEMICAL_CONSTRUCT,
-        THAUMATORIUM,
-        _11,
-        MNEMONIC_MATRIX,
-        LAMP_OF_FERTILITY,
-        VIS_RELAY,;
-    }
-
-    public enum WoodenDeviceType {
-        BELLOWS,
-        EAR,
-        PRESSURE_PLATE,
-        PRESSURE_PLATE_B,
-        BORE_BASE,
-        BORE,
-        PLANKS_GREATWOOD,
-        PLANKS_SILVERWOOD,
-        BANNER,;
-    }
-
-    public enum AiryBlockType {
-        NODE,
-        NITOR,
-        _2,
-        _3,
-        WARDING_STONE_FENCE,
-        ENERGIZED_NODE,;
-    }
-
-    public enum Entity {
-
-        BRAINY_ZOMBIE("entBrainyZombie", "EntityBrainyZombie"),
-        GIANT_BRAINY_ZOMBIE("entGiantBrainyZombie", "EntityGiantBrainyZombie"),
-        WISP("entWisp", "EntityWisp"),
-        FIREBAT("entFirebat", "EntityFireBat"),;
-
-        private static String packageName = "thaumcraft.common.entities.monster.";
-
-        public String entityID;
-        private String className;
-
-        private Entity(String id, String clazz) {
-            this.entityID = id;
-            this.className = clazz;
-        }
-
-        public String getClassName() {
-            return packageName + this.className;
-        }
-    }
-
-    public enum BlockPlant {
-        GREATWOOD_SAPLING,
-        SILVERWOOD_SAPLING,
-        SHIMMERLEAF,
-        CINDERPEARL,
-        PURIFYING_PLANT,
-        VISHROOM,;
-    }
-
-    public enum TreeType {
-        GREATWOOD,
-        SILVERWOOD,;
-    }
-
+    public static final String Name = "Thaumcraft";
     public static Block plant;
     public static Block candle;
     public static Block crystal;
@@ -191,7 +51,6 @@ public class ThaumcraftHelper implements IModHelper {
     public static Block airy;
     public static Block fluxGas;
     public static Block fluxGoo;
-
     public static Item filledJar;
     public static Item miscResource;
     public static Item shard;
@@ -201,63 +60,17 @@ public class ThaumcraftHelper implements IModHelper {
     public static Item nuggetBeef;
     public static Item nuggetPork;
     public static Item zombieBrain;
-
     public static ResearchItem bloodFramePage;
     public static ResearchPage bloodFrame1;
     public static ResearchPage bloodFrame2;
-
     public static ResearchItem frenzyFramePage;
     public static ResearchPage frenzyFrame1;
     public static ResearchPage frenzyFrame2;
-
     public static Class<? extends TileEntity> nodeClass;
-
-    public static final String Name = "Thaumcraft";
+    public static Object bloodFrame;
+    public static Object frenziedFrame;
     private static boolean isThaumcraftPresent = false;
-
-    public static boolean isActive() {
-        return isThaumcraftPresent;
-    }
-
-    public void preInit() {
-        if (Loader.isModLoaded(Name) && Config.thaumcraftActive) {
-            isThaumcraftPresent = true;
-            aspectTime = new Aspect(
-                    "tempus",
-                    0xB68CFF,
-                    new Aspect[] { Aspect.VOID, Aspect.ORDER },
-                    new ResourceLocation(CommonProxy.DOMAIN, CommonProxy.TEXTURE + "aspects/tempus.png"),
-                    1);
-            MagicBeesAPI.thaumcraftAspectTempus = aspectTime;
-        } else {
-            // Switch off TC-dependant items.
-            ResourceType.LORE_FRAGMENT.setHidden();
-            ResourceType.TC_DUST_AIR.setHidden();
-            ResourceType.TC_DUST_CHAOS.setHidden();
-            ResourceType.TC_DUST_EARTH.setHidden();
-            ResourceType.TC_DUST_FIRE.setHidden();
-            ResourceType.TC_DUST_ORDER.setHidden();
-            ResourceType.TC_DUST_WATER.setHidden();
-        }
-    }
-
-    public void init() {
-        if (isActive()) {
-            getBlocks();
-            getItems();
-        }
-    }
-
-    public void postInit() {
-        if (isActive()) {
-            setupItemAspects();
-            setupCrafting();
-            setupResearch();
-        }
-    }
-
     private static Object aspectTime;
-
     private static Object frameMagic;
     private static Object thaumScoop;
     private static Object thaumGrafter;
@@ -271,12 +84,13 @@ public class ThaumcraftHelper implements IModHelper {
     private static Object essenceTime;
     private static Object essenceOblivion;
     private static Object visAuraProvider;
-
-    public static Object bloodFrame;
-    public static Object frenziedFrame;
-
     private static Object voidScoop;
     private static Object voidGrafter;
+    private static InfusionRecipe apimancersDrainer;
+
+    public static boolean isActive() {
+        return isThaumcraftPresent;
+    }
 
     private static void getBlocks() {
         plant = BlockInterface.getBlock(Name, "blockCustomPlant");
@@ -340,32 +154,56 @@ public class ThaumcraftHelper implements IModHelper {
                 "MB_Scoop",
                 new ItemStack(Config.thaumiumScoop),
                 new AspectList().add(Aspect.ORDER, 2),
-                new Object[] { "sWs", "sTs", " T ", 's', Items.stick, 'W', Blocks.wool, 'T',
-                        new ItemStack(miscResource, 1, MiscResource.THAUMIUM.ordinal()) });
+                "sWs",
+                "sTs",
+                " T ",
+                's',
+                Items.stick,
+                'W',
+                Blocks.wool,
+                'T',
+                new ItemStack(miscResource, 1, MiscResource.THAUMIUM.ordinal()));
 
         thaumGrafter = ThaumcraftApi.addArcaneCraftingRecipe(
                 "MB_Grafter",
                 new ItemStack(Config.thaumiumGrafter),
                 new AspectList().add(Aspect.ORDER, 5),
-                new Object[] { "  T", " s ", "s  ", 's', Items.stick, 'T',
-                        new ItemStack(miscResource, 1, MiscResource.THAUMIUM.ordinal()) });
+                "  T",
+                " s ",
+                "s  ",
+                's',
+                Items.stick,
+                'T',
+                new ItemStack(miscResource, 1, MiscResource.THAUMIUM.ordinal()));
 
         frameMagic = ThaumcraftApi.addArcaneCraftingRecipe(
                 "MB_FrameMagic",
                 new ItemStack(Config.hiveFrameMagic),
                 new AspectList().add(Aspect.ORDER, 5).add(Aspect.AIR, 2).add(Aspect.EARTH, 2),
-                new Object[] { "sss", "sCs", "sss", 's', Items.stick, 'C',
-                        new ItemStack(miscResource, 1, MiscResource.ENCHANTED_FABRIC.ordinal()) });
+                "sss",
+                "sCs",
+                "sss",
+                's',
+                Items.stick,
+                'C',
+                new ItemStack(miscResource, 1, MiscResource.ENCHANTED_FABRIC.ordinal()));
 
         visAuraProvider = ThaumcraftApi.addArcaneCraftingRecipe(
                 "MB_VisAuraProvider",
                 new ItemStack(Config.visAuraProvider),
                 new AspectList().add(Aspect.ORDER, 60).add(Aspect.AIR, 60).add(Aspect.ENTROPY, 60)
                         .add(Aspect.WATER, 60),
-                new Object[] { "ngn", "gvg", "npn", 'n', Items.gold_nugget, 'g',
-                        new ItemStack(wooden, 1, WoodenDeviceType.PLANKS_GREATWOOD.ordinal()), 'v',
-                        new ItemStack(metal, 1, MetalDeviceType.VIS_RELAY.ordinal()), 'p',
-                        Config.pollen.getStackForType(PollenType.UNUSUAL) });
+                "ngn",
+                "gvg",
+                "npn",
+                'n',
+                Items.gold_nugget,
+                'g',
+                new ItemStack(wooden, 1, WoodenDeviceType.PLANKS_GREATWOOD.ordinal()),
+                'v',
+                new ItemStack(metal, 1, MetalDeviceType.VIS_RELAY.ordinal()),
+                'p',
+                Config.pollen.getStackForType(PollenType.UNUSUAL));
 
         essenceLife = ThaumcraftApi.addCrucibleRecipe(
                 "MB_EssenceLife",
@@ -426,22 +264,49 @@ public class ThaumcraftHelper implements IModHelper {
                 "MB_EssenceOblivion",
                 Config.miscResources.getStackForType(ResourceType.ESSENCE_SCORNFUL_OBLIVION),
                 new AspectList().add(Aspect.ENTROPY, 25).add(Aspect.AIR, 40).add(Aspect.ORDER, 15),
-                new Object[] { Config.miscResources.getStackForType(ResourceType.DIMENSIONAL_SINGULARITY),
-                        Blocks.dragon_egg, });
+                Config.miscResources.getStackForType(ResourceType.DIMENSIONAL_SINGULARITY),
+                Blocks.dragon_egg);
 
         voidScoop = ThaumcraftApi.addArcaneCraftingRecipe(
                 "MB_ScoopVoid",
                 new ItemStack(Config.voidScoop),
                 new AspectList().add(Aspect.ORDER, 2),
-                new Object[] { "sWs", "sTs", " T ", 's', Items.stick, 'W', Blocks.wool, 'T',
-                        new ItemStack(miscResource, 1, MiscResource.VOID_INGOT.ordinal()) });
+                "sWs",
+                "sTs",
+                " T ",
+                's',
+                Items.stick,
+                'W',
+                Blocks.wool,
+                'T',
+                new ItemStack(miscResource, 1, MiscResource.VOID_INGOT.ordinal()));
 
         voidGrafter = ThaumcraftApi.addArcaneCraftingRecipe(
                 "MB_GrafterVoid",
                 new ItemStack(Config.voidGrafter),
                 new AspectList().add(Aspect.ORDER, 5),
-                new Object[] { "  T", " s ", "s  ", 's', Items.stick, 'T',
-                        new ItemStack(miscResource, 1, MiscResource.VOID_INGOT.ordinal()) });
+                "  T",
+                " s ",
+                "s  ",
+                's',
+                Items.stick,
+                'T',
+                new ItemStack(miscResource, 1, MiscResource.VOID_INGOT.ordinal()));
+
+        ItemStack centrifuge = new ItemStack(ConfigBlocks.blockTube);
+        centrifuge.setItemDamage(2);
+        apimancersDrainer = ThaumcraftApi.addInfusionCraftingRecipe(
+                "MB_ApimancersDrainer",
+                new ItemStack(Config.apimancersDrainer),
+                6,
+                new AspectList().add(Aspect.MAGIC, 40).add(Aspect.HARVEST, 20).add(Aspect.EXCHANGE, 20)
+                        .add(Aspect.ELDRITCH, 20),
+                new ItemStack(ConfigBlocks.blockEssentiaReservoir),
+                new ItemStack[] { centrifuge, Config.pollen.getStackForType(PollenType.UNUSUAL),
+                        Config.pollen.getStackForType(PollenType.PHASED),
+                        Config.miscResources.getStackForType(ResourceType.DIMENSIONAL_SINGULARITY),
+                        Config.pollen.getStackForType(PollenType.UNUSUAL),
+                        Config.pollen.getStackForType(PollenType.PHASED) });
     }
 
     private static void setupResearch() {
@@ -686,6 +551,19 @@ public class ThaumcraftHelper implements IModHelper {
                                 new ResearchPage((IArcaneRecipe) visAuraProvider))
                         .setParentsHidden("VISPOWER").registerResearchItem();
 
+        new ResearchItem(
+                "MB_ApimancersDrainer",
+                category,
+                new AspectList().add(Aspect.ELDRITCH, 1).add(Aspect.HARVEST, 1).add(Aspect.MAGIC, 1)
+                        .add((Aspect) aspectTime, 1),
+                -3,
+                5,
+                4,
+                new ItemStack(Config.apimancersDrainer))
+                        .setPages(getResearchPage("MB_ApimancersDrainer.1"), new ResearchPage(apimancersDrainer))
+                        .setParentsHidden("VOIDMETAL", "ESSENTIARESERVOIR").setParents("MB_EssenceUnstable")
+                        .setConcealed().registerResearchItem();
+
     }
 
     private static ResearchPage getResearchPage(String ident) {
@@ -882,5 +760,184 @@ public class ThaumcraftHelper implements IModHelper {
                 new int[] { item.getItemDamage() },
                 new AspectList().add(Aspect.VOID, 6).add((Aspect) aspectTime, 8));
 
+    }
+
+    public void preInit() {
+        if (Loader.isModLoaded(Name) && Config.thaumcraftActive) {
+            isThaumcraftPresent = true;
+            aspectTime = new Aspect(
+                    "tempus",
+                    0xB68CFF,
+                    new Aspect[] { Aspect.VOID, Aspect.ORDER },
+                    new ResourceLocation(CommonProxy.DOMAIN, CommonProxy.TEXTURE + "aspects/tempus.png"),
+                    1);
+            MagicBeesAPI.thaumcraftAspectTempus = aspectTime;
+        } else {
+            // Switch off TC-dependant items.
+            ResourceType.LORE_FRAGMENT.setHidden();
+            ResourceType.TC_DUST_AIR.setHidden();
+            ResourceType.TC_DUST_CHAOS.setHidden();
+            ResourceType.TC_DUST_EARTH.setHidden();
+            ResourceType.TC_DUST_FIRE.setHidden();
+            ResourceType.TC_DUST_ORDER.setHidden();
+            ResourceType.TC_DUST_WATER.setHidden();
+        }
+    }
+
+    public void init() {
+        if (isActive()) {
+            getBlocks();
+            getItems();
+        }
+    }
+
+    public void postInit() {
+        if (isActive()) {
+            setupItemAspects();
+            setupCrafting();
+            setupResearch();
+        }
+    }
+
+    public enum MiscResource {
+        ALUMENTUM,
+        NITOR,
+        THAUMIUM,
+        QUICKSILVER,
+        MAGIC_TALLOW,
+        BRAIN_DEPRECATED,
+        AMBER,
+        ENCHANTED_FABRIC,
+        VIS_FILTER,
+        KNOWLEDGE_FRAGMENT,
+        MIRRORED_GLASS,
+        TAINTED_GOO,
+        TAINTED_TENDRIL,
+        JAR_LABEL,
+        SALIS,
+        CHARM,
+        VOID_INGOT,
+        VOID_SEED,
+        COIN,
+    }
+
+    public enum NuggetType {
+        IRON,
+        COPPER,
+        TIN,
+        SILVER,
+        LEAD,
+        QUICKSILVER,
+        THAUMIUM,
+        VOID_METAL,
+        _8,
+        _9,
+        _10,
+        _11,
+        _12,
+        _13,
+        _14,
+        _15,
+        NATIVE_IRON,
+        NATIVE_COPPER,
+        NATIVE_TIN,
+        NATIVE_SILVER,
+        NATIVE_LEAD,
+        NATIVE_CINNABAR,
+        _22,
+        _23,
+        _24,
+        _25,
+        _26,
+        _27,
+        _28,
+        _29,
+        _30,
+        NATIVE_GOLD,
+    }
+
+    public enum ShardType {
+        AIR,
+        FIRE,
+        WATER,
+        EARTH,
+        ORDER,
+        CHAOS,
+        BALANCED,
+    }
+
+    public enum MetalDeviceType {
+        CRUCIBLE,
+        ALEMBIC,
+        VIS_CHARGE_RELAY,
+        ADVANCED_ALCHEMICAL_CONSTRUCT,
+        _4,
+        ITEM_GRATE,
+        _6,
+        ARCANE_LAMP,
+        LAMP_OF_GROWTH,
+        ALCHEMICAL_CONSTRUCT,
+        THAUMATORIUM,
+        _11,
+        MNEMONIC_MATRIX,
+        LAMP_OF_FERTILITY,
+        VIS_RELAY,
+    }
+
+    public enum WoodenDeviceType {
+        BELLOWS,
+        EAR,
+        PRESSURE_PLATE,
+        PRESSURE_PLATE_B,
+        BORE_BASE,
+        BORE,
+        PLANKS_GREATWOOD,
+        PLANKS_SILVERWOOD,
+        BANNER,
+    }
+
+    public enum AiryBlockType {
+        NODE,
+        NITOR,
+        _2,
+        _3,
+        WARDING_STONE_FENCE,
+        ENERGIZED_NODE,
+    }
+
+    public enum Entity {
+
+        BRAINY_ZOMBIE("entBrainyZombie", "EntityBrainyZombie"),
+        GIANT_BRAINY_ZOMBIE("entGiantBrainyZombie", "EntityGiantBrainyZombie"),
+        WISP("entWisp", "EntityWisp"),
+        FIREBAT("entFirebat", "EntityFireBat"),;
+
+        private static final String packageName = "thaumcraft.common.entities.monster.";
+
+        public String entityID;
+        private final String className;
+
+        Entity(String id, String clazz) {
+            this.entityID = id;
+            this.className = clazz;
+        }
+
+        public String getClassName() {
+            return packageName + this.className;
+        }
+    }
+
+    public enum BlockPlant {
+        GREATWOOD_SAPLING,
+        SILVERWOOD_SAPLING,
+        SHIMMERLEAF,
+        CINDERPEARL,
+        PURIFYING_PLANT,
+        VISHROOM,
+    }
+
+    public enum TreeType {
+        GREATWOOD,
+        SILVERWOOD,
     }
 }

@@ -41,5 +41,6 @@ public class ModHelperManager {
         helpers.add(new AppliedEnergisticsHelper());
         helpers.add(new BaublesHelper());
         helpers.add(new BloodHelper());
+        helpers.add(new ThaumicHorizonsHelper());
     }
 }
