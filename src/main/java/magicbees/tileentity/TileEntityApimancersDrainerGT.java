@@ -44,7 +44,10 @@ public class TileEntityApimancersDrainerGT extends TileEntityApimancersDrainerCo
         if (GTMetaTileEntity != null) {
             IMetaTileEntity underlyingMetaTileEntity = GTMetaTileEntity.getMetaTileEntity();
             if (!(underlyingMetaTileEntity instanceof GT_MetaTileEntity_IndustrialApiary)) return null;
-            return (IBeeHousing) underlyingMetaTileEntity;
+            if (underlyingMetaTileEntity instanceof GT_MetaTileEntity_IndustrialApiary) return null; // remove when the
+                                                                                                     // GT thing is
+                                                                                                     // fixed, temp fix
+            // return (IBeeHousing) underlyingMetaTileEntity; // uncomment when the GT thing is fixed, temp fix
         }
 
         return null;
@@ -58,31 +61,37 @@ public class TileEntityApimancersDrainerGT extends TileEntityApimancersDrainerCo
 
     @Override
     protected ItemStack getQueen(IBeeHousing beeHousing, TileEntity te) {
-        BaseMetaTileEntity GTMetaTileEntity = getGTTileEntity(te);
-        GT_MetaTileEntity_IndustrialApiary industrialApiary = getGTIndustrialApiary(GTMetaTileEntity);
-        return industrialApiary != null ? industrialApiary.getUsedQueen() : super.getQueen(beeHousing, te);
+        return null;
+        // BaseMetaTileEntity GTMetaTileEntity = getGTTileEntity(te);
+        // GT_MetaTileEntity_IndustrialApiary industrialApiary = getGTIndustrialApiary(GTMetaTileEntity);
+        // return industrialApiary != null ? industrialApiary.getUsedQueen() : super.getQueen(beeHousing, te);
     }
 
     @Override
     protected int getProductionMultiplier(IBeeModifier modifier, IBee queen, TileEntity te) {
-        BaseMetaTileEntity GTMetaTileEntity = getGTTileEntity(te);
-        GT_MetaTileEntity_IndustrialApiary industrialApiary = getGTIndustrialApiary(GTMetaTileEntity);
-        int housingProductionMultiplier = super.getProductionMultiplier(modifier, queen, te);
-        return industrialApiary != null
-                ? housingProductionMultiplier * (int) Math.ceil(Math.sqrt(industrialApiary.mSpeed))
-                : housingProductionMultiplier;
+        return 0;
+        // BaseMetaTileEntity GTMetaTileEntity = getGTTileEntity(te);
+        // GT_MetaTileEntity_IndustrialApiary industrialApiary = getGTIndustrialApiary(GTMetaTileEntity);
+        // int housingProductionMultiplier = super.getProductionMultiplier(modifier, queen, te);
+        // return industrialApiary != null
+        // ? housingProductionMultiplier * (int) Math.ceil(Math.sqrt(industrialApiary.mSpeed))
+        // : housingProductionMultiplier;
     }
 
     private BaseMetaTileEntity getGTTileEntity(TileEntity te) {
-        boolean isGTMetaTileEntity = te instanceof BaseMetaTileEntity;
-        return isGTMetaTileEntity ? (BaseMetaTileEntity) te : null;
+        return null;
+        // boolean isGTMetaTileEntity = te instanceof BaseMetaTileEntity;
+        // return isGTMetaTileEntity ? (BaseMetaTileEntity) te : null;
     }
 
     private GT_MetaTileEntity_IndustrialApiary getGTIndustrialApiary(BaseMetaTileEntity bmte) {
         if (bmte != null) {
             IMetaTileEntity underlyingMetaTileEntity = bmte.getMetaTileEntity();
             if (!(underlyingMetaTileEntity instanceof GT_MetaTileEntity_IndustrialApiary)) return null;
-            return (GT_MetaTileEntity_IndustrialApiary) underlyingMetaTileEntity;
+            if (underlyingMetaTileEntity instanceof GT_MetaTileEntity_IndustrialApiary) return null; // remove when the
+                                                                                                     // GT thing is
+                                                                                                     // fixed, temp fix
+            // return (GT_MetaTileEntity_IndustrialApiary) underlyingMetaTileEntity;
         }
         return null;
     }
