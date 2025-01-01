@@ -37,13 +37,17 @@ public class AlleleEffectTransmuting extends AlleleEffect {
         IBeeModifier beeModifier = BeeManager.beeRoot.createBeeHousingModifier(housing);
 
         // Get random coords within territory
-        int xRange = (int) (beeModifier.getTerritoryModifier(genome, 1f) * genome.getTerritory()[0]);
-        int yRange = (int) (beeModifier.getTerritoryModifier(genome, 1f) * genome.getTerritory()[1]);
-        int zRange = (int) (beeModifier.getTerritoryModifier(genome, 1f) * genome.getTerritory()[2]);
+        int[] randomCoords = new int[3];
+        for (int i = 0; i < 3; i++) {
+            int range = (int) (beeModifier.getTerritoryModifier(genome, 1f) * genome.getTerritory()[i]);
+            if (range > 0) {
+                randomCoords[i] = world.rand.nextInt(range) - range / 2;
+            }
+        }
 
-        int xCoord = coords.posX + world.rand.nextInt(xRange) - xRange / 2;
-        int yCoord = coords.posY + world.rand.nextInt(yRange) - yRange / 2;
-        int zCoord = coords.posZ + world.rand.nextInt(zRange) - zRange / 2;
+        int xCoord = coords.posX + randomCoords[0];
+        int yCoord = coords.posY + randomCoords[1];
+        int zCoord = coords.posZ + randomCoords[2];
 
         BiomeGenBase biome = world.getBiomeGenForCoords(xCoord, zCoord);
         transmutationController.attemptTransmutations(
