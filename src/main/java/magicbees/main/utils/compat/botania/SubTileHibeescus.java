@@ -182,7 +182,7 @@ public class SubTileHibeescus extends SubTileFunctional {
     }
 
     protected float getManaPerOpTick() {
-        return getFinalOperationManaCost() / OPERATION_TICKS_TIME;
+        return (float) getFinalOperationManaCost() / OPERATION_TICKS_TIME;
     }
 
     @Override
