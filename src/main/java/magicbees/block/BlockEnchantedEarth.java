@@ -28,6 +28,7 @@ public class BlockEnchantedEarth extends Block {
         setBlockTextureName(CommonProxy.DOMAIN + ":enchantedEarth");
         setTickRandomly(true);
         setStepSound(soundTypeGravel);
+        setHardness(0.1F);
     }
 
     @Override
