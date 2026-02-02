@@ -227,8 +227,7 @@ public class TileEntityApimancersDrainerCommon extends TileEntity
 
             int total = this.essentia.getAmount(aspect);
             this.essentia.remove(aspect, amount); // if amount >= total then it will also remove aspect.
-            if (amount > total) return total;
-            return amount;
+            return Math.min(amount, total);
         }
         return 0;
     }
