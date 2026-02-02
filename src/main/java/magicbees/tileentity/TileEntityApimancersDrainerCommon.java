@@ -287,6 +287,9 @@ public class TileEntityApimancersDrainerCommon extends TileEntity
     public void readFromNBT(NBTTagCompound compound) {
         super.readFromNBT(compound);
         this.essentia.readFromNBT(compound);
+        for (Aspect aspect : this.essentia.getAspects()) {
+            if (this.essentia.getAmount(aspect) <= 0) this.essentia.remove(aspect);
+        }
         if (this.essentia.visSize() > this.maxAmount) {
             this.essentia = new AspectList();
         }
