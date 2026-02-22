@@ -91,7 +91,7 @@ public class ItemFrenziedFrame extends EnergyItems implements IHiveFrame {
     @SuppressWarnings({ "unchecked", "rawtypes" })
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
         par3List.add(StatCollector.translateToLocal("MAY CHAOS TAKE THE WORLD"));
-        par3List.add(StatCollector.translateToLocal("Uses " + String.valueOf(energyUsed) + " LP per cycle"));
+        par3List.add(StatCollector.translateToLocal("Uses " + String.valueOf(energyUsed) + " LP per Bee tick"));
 
         if (par1ItemStack.hasTagCompound()) {
             par3List.add(
