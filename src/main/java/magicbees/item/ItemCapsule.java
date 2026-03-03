@@ -38,7 +38,7 @@ public class ItemCapsule extends Item {
     public String getItemStackDisplayName(ItemStack itemStack) {
         return String.format(
                 this.capsuleType.getLocalizedName(),
-                FluidType.values()[itemStack.getItemDamage()].getDisplayName());
+                FluidType.VALUES[itemStack.getItemDamage()].getDisplayName());
     }
 
     public ItemStack getCapsuleForLiquid(FluidType l) {
@@ -49,7 +49,7 @@ public class ItemCapsule extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public void getSubItems(Item item, CreativeTabs tab, List itemList) {
-        for (FluidType l : FluidType.values()) {
+        for (FluidType l : FluidType.VALUES) {
             if (l.available) {
                 itemList.add(new ItemStack(this, 1, l.ordinal()));
             }
@@ -68,7 +68,7 @@ public class ItemCapsule extends Item {
                 CommonProxy.DOMAIN + ":capsule"
                         + this.capsuleType.getName().substring(0, 1).toUpperCase()
                         + this.capsuleType.getName().substring(1));
-        for (FluidType t : FluidType.values()) {
+        for (FluidType t : FluidType.VALUES) {
             if (t != FluidType.EMPTY) {
                 t.liquidIcon = iconRegister.registerIcon(CommonProxy.DOMAIN + ":liquids/" + t.liquidID);
             }
@@ -80,7 +80,7 @@ public class ItemCapsule extends Item {
     public IIcon getIconFromDamageForRenderPass(int metadata, int pass) {
         IIcon i = this.itemIcon;
         if (metadata != 0 && pass == 0) {
-            i = FluidType.values()[metadata % FluidType.values().length].liquidIcon;
+            i = FluidType.VALUES[metadata % FluidType.VALUES.length].liquidIcon;
         }
         return i;
     }

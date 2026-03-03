@@ -822,7 +822,7 @@ public class CraftingManager {
         ItemStack filled;
         FluidStack liquid = null;
 
-        for (FluidType fluidType : FluidType.values()) {
+        for (FluidType fluidType : FluidType.VALUES) {
             switch (fluidType) {
                 case EMPTY:
                     liquid = null;

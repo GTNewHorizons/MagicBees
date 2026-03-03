@@ -39,6 +39,9 @@ public enum CombType {
     TE_LUX("TElux", false),
     TE_ENDEARING("TEendearing", false),;
 
+    /**
+     * Cached values() array for frequent read-only operations, the array should NOT be mutated.
+     */
     public static final CombType[] VALUES = values();
     private static final int[][] colours = new int[][] { { 0xFF9859, 0xFFC58E }, { 0xcc3333, 0x1E160E },
             { 0x9872FF, 0x2D2D2D }, { 0x3EE0D8, 0x3A3820 }, { 0xE5425D, 0x323291 }, { 0xBCA664, 0x35332E },
