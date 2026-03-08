@@ -90,8 +90,8 @@ public class ItemBloodBaseFrame extends EnergyItems implements IHiveFrame {
     @Override
     @SuppressWarnings({ "unchecked", "rawtypes" })
     public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
-        par3List.add(StatCollector.translateToLocal("You feel gross touching this"));
-        par3List.add(StatCollector.translateToLocal("Uses " + String.valueOf(energyUsed) + " LP per Bee tick"));
+        par3List.add(StatCollector.translateToLocal("tooltip.bloodBaseFrame.desc"));
+        par3List.add(StatCollector.translateToLocalFormatted("tooltip.bloodFrame.cost", energyUsed));
 
         if (par1ItemStack.hasTagCompound()) {
             par3List.add(
