@@ -37,7 +37,7 @@ public class ItemPollen extends Item {
     @SideOnly(Side.CLIENT)
     @SuppressWarnings({ "unchecked", "rawtypes" })
     public void getSubItems(Item item, CreativeTabs tabs, List list) {
-        for (PollenType type : PollenType.values()) {
+        for (PollenType type : PollenType.VALUES) {
             list.add(this.getStackForType(type));
         }
     }
@@ -70,11 +70,11 @@ public class ItemPollen extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public int getColorFromItemStack(ItemStack stack, int pass) {
-        int meta = Math.max(0, Math.min(PollenType.values().length - 1, stack.getItemDamage()));
-        int colour = PollenType.values()[meta].colour[0];
+        int meta = Math.max(0, Math.min(PollenType.VALUES.length - 1, stack.getItemDamage()));
+        int colour = PollenType.VALUES[meta].colourA;
 
         if (pass >= 1) {
-            colour = PollenType.values()[meta].colour[1];
+            colour = PollenType.VALUES[meta].colourB;
         }
 
         return colour;
@@ -82,6 +82,6 @@ public class ItemPollen extends Item {
 
     @Override
     public String getItemStackDisplayName(ItemStack stack) {
-        return PollenType.values()[stack.getItemDamage()].getName();
+        return PollenType.VALUES[stack.getItemDamage()].getName();
     }
 }
