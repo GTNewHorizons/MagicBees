@@ -4,6 +4,7 @@ import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.StatCollector;
 
 import org.lwjgl.opengl.GL11;
 
@@ -20,7 +21,7 @@ public class GuiMagicApiary extends GuiContainer {
             CommonProxy.GUI_TEXTURE + "apiary.png");
 
     private static final int WIDTH = 176;
-    private static final int HEIGHT = 190;
+    private static final int HEIGHT = 192;
 
     private static final int LIFEBAR_WIDTH = 2;
     private static final int LIFEBAR_HEIGHT = 46;
@@ -67,7 +68,7 @@ public class GuiMagicApiary extends GuiContainer {
 
     @Override
     protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-        fontRendererObj.drawString("Inventory", 9, 99, 0);
+        fontRendererObj.drawString(StatCollector.translateToLocal("container.inventory"), 9, 99, 0);
     }
 
     @Override
