@@ -25,9 +25,9 @@ public enum HiveType {
     CURIOUS("curious", BeeSpecies.MYSTICAL, 12, true),
     UNUSUAL("unusual", BeeSpecies.UNUSUAL, 12, true),
     RESONANT("resonant", BeeSpecies.SORCEROUS, 12, true),
-    DEEP("deep", BeeSpecies.ATTUNED, 4, false),
-    INFERNAL("infernal", BeeSpecies.INFERNAL, 15, false),
-    OBLIVION("oblivion", BeeSpecies.OBLIVION, 7, false),;
+    DEEP("deep", BeeSpecies.ATTUNED, 4, true),
+    INFERNAL("infernal", BeeSpecies.INFERNAL, 15, true),
+    OBLIVION("oblivion", BeeSpecies.OBLIVION, 7, true),;
 
     private static String[] nameList;
 
