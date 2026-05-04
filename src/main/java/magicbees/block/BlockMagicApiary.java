@@ -40,7 +40,9 @@ public class BlockMagicApiary extends BlockContainer {
         boolean activate = false;
 
         if (!player.isSneaking()) {
-            player.openGui(MagicBees.object, UIScreens.THAUMIC_APIARY.ordinal(), world, x, y, z);
+            if (!world.isRemote) {
+                player.openGui(MagicBees.object, UIScreens.THAUMIC_APIARY.ordinal(), world, x, y, z);
+            }
             activate = true;
         }
 
