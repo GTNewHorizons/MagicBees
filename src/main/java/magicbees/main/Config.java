@@ -165,7 +165,7 @@ public class Config {
     public static Configuration configuration;
 
     // ---- Loaded mods -----------------------------------------
-    public static boolean isGTLoaded = Loader.isModLoaded("gregtech");
+    public static boolean isGT5uNHLoaded = Loader.isModLoaded("gregtech_nh");
     public static boolean isGTNHCoreModLoaded = Loader.isModLoaded("gregtech") && Loader.isModLoaded("dreamcraft");
     public static boolean isThaumicEnergisticsLoaded = Loader.isModLoaded("thaumicenergistics");
 
