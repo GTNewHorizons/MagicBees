@@ -261,11 +261,11 @@ public class BeeProductHelper {
     }
 
     public static void initOreDictSProducts() {
-        boolean isGTLoaded = Config.isGTNHCoreModLoaded;
+        boolean isGTNHCoreModLoaded = Config.isGTNHCoreModLoaded;
         SILVER.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
         if (OreDictionary.getOres("nuggetSilver").size() > 0) {
             SILVER.addSpecialty(
-                    isGTLoaded ? Materials.Silver.getNuggets(1) : OreDictionary.getOres("nuggetSilver").get(0),
+                    isGTNHCoreModLoaded ? Materials.Silver.getNuggets(1) : OreDictionary.getOres("nuggetSilver").get(0),
                     0.16f);
         } else {
             SILVER.setInactive();
@@ -274,7 +274,7 @@ public class BeeProductHelper {
         LEAD.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
         if (OreDictionary.getOres("nuggetLead").size() > 0) {
             LEAD.addSpecialty(
-                    isGTLoaded ? Materials.Lead.getNuggets(1) : OreDictionary.getOres("nuggetLead").get(0),
+                    isGTNHCoreModLoaded ? Materials.Lead.getNuggets(1) : OreDictionary.getOres("nuggetLead").get(0),
                     0.17f);
         } else {
             LEAD.setInactive();
@@ -291,7 +291,7 @@ public class BeeProductHelper {
         TE_PLATINUM.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
         if (OreDictionary.getOres("nuggetPlatinum").size() > 0) {
             TE_PLATINUM.addSpecialty(
-                    isGTLoaded ? Materials.Platinum.getNuggets(1) : OreDictionary.getOres("nuggetPlatinum").get(0),
+                    isGTNHCoreModLoaded ? Materials.Platinum.getNuggets(1) : OreDictionary.getOres("nuggetPlatinum").get(0),
                     0.18f);
         } else {
             TE_PLATINUM.setInactive();
@@ -300,7 +300,7 @@ public class BeeProductHelper {
         TE_NICKEL.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
         if (OreDictionary.getOres("nuggetNickel").size() > 0) {
             TE_NICKEL.addSpecialty(
-                    isGTLoaded ? Materials.Nickel.getNuggets(1) : OreDictionary.getOres("nuggetNickel").get(0),
+                    isGTNHCoreModLoaded ? Materials.Nickel.getNuggets(1) : OreDictionary.getOres("nuggetNickel").get(0),
                     0.18f);
         } else {
             TE_NICKEL.setInactive();
@@ -309,7 +309,7 @@ public class BeeProductHelper {
         ARDITE.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
         if (OreDictionary.getOres("nuggetArdite").size() > 0) {
             ARDITE.addSpecialty(
-                    isGTLoaded ? Materials.Ardite.getNuggets(1) : OreDictionary.getOres("nuggetArdite").get(0),
+                    isGTNHCoreModLoaded ? Materials.Ardite.getNuggets(1) : OreDictionary.getOres("nuggetArdite").get(0),
                     0.18f);
         } else {
             ARDITE.setInactive();
@@ -318,7 +318,7 @@ public class BeeProductHelper {
         COBALT.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
         if (OreDictionary.getOres("nuggetCobalt").size() > 0) {
             COBALT.addSpecialty(
-                    isGTLoaded ? Materials.Cobalt.getNuggets(1) : OreDictionary.getOres("nuggetCobalt").get(0),
+                    isGTNHCoreModLoaded ? Materials.Cobalt.getNuggets(1) : OreDictionary.getOres("nuggetCobalt").get(0),
                     0.18f);
         } else {
             COBALT.setInactive();
@@ -327,7 +327,7 @@ public class BeeProductHelper {
         TE_BRONZE.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
         if (OreDictionary.getOres("nuggetBronze").size() > 0) {
             TE_BRONZE.addSpecialty(
-                    isGTLoaded ? Materials.Bronze.getNuggets(1) : OreDictionary.getOres("nuggetBronze").get(0),
+                    isGTNHCoreModLoaded ? Materials.Bronze.getNuggets(1) : OreDictionary.getOres("nuggetBronze").get(0),
                     0.18f);
         } else {
             TE_BRONZE.setInactive();
@@ -336,7 +336,7 @@ public class BeeProductHelper {
         TE_INVAR.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
         if (OreDictionary.getOres("nuggetInvar").size() > 0) {
             TE_INVAR.addSpecialty(
-                    isGTLoaded ? Materials.Invar.getNuggets(1) : OreDictionary.getOres("nuggetInvar").get(0),
+                    isGTNHCoreModLoaded ? Materials.Invar.getNuggets(1) : OreDictionary.getOres("nuggetInvar").get(0),
                     0.18f);
         } else {
             TE_INVAR.setInactive();
@@ -345,7 +345,7 @@ public class BeeProductHelper {
         TE_ELECTRUM.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
         if (OreDictionary.getOres("nuggetElectrum").size() > 0) {
             TE_ELECTRUM.addSpecialty(
-                    isGTLoaded ? Materials.Electrum.getNuggets(1) : OreDictionary.getOres("nuggetElectrum").get(0),
+                    isGTNHCoreModLoaded ? Materials.Electrum.getNuggets(1) : OreDictionary.getOres("nuggetElectrum").get(0),
                     0.18f);
         } else {
             TE_ELECTRUM.setInactive();
@@ -354,7 +354,7 @@ public class BeeProductHelper {
         MANYULLYN.addProduct(ForestryHelper.itemHoneycomb, 0.10f);
         if (OreDictionary.getOres("nuggetManyullyn").size() > 0) {
             MANYULLYN.addSpecialty(
-                    isGTLoaded ? Materials.Manyullyn.getNuggets(1) : OreDictionary.getOres("nuggetManyullyn").get(0),
+                    isGTNHCoreModLoaded ? Materials.Manyullyn.getNuggets(1) : OreDictionary.getOres("nuggetManyullyn").get(0),
                     0.18f);
         } else {
             MANYULLYN.setInactive();
