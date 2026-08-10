@@ -37,7 +37,7 @@ public class ItemNugget extends Item {
     @SideOnly(Side.CLIENT)
     @SuppressWarnings({ "unchecked", "rawtypes" })
     public void getSubItems(Item item, CreativeTabs tab, List list) {
-        for (NuggetType type : NuggetType.values()) {
+        for (NuggetType type : NuggetType.VALUES) {
             if (type.isActive()) {
                 list.add(new ItemStack(item, 1, type.ordinal()));
             }
@@ -46,12 +46,12 @@ public class ItemNugget extends Item {
 
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister par1IconRegister) {
-        this.icons = new IIcon[NuggetType.values().length];
-        for (int i = 0; i < NuggetType.values().length; i++) {
+        this.icons = new IIcon[NuggetType.VALUES.length];
+        for (int i = 0; i < NuggetType.VALUES.length; i++) {
             this.icons[i] = par1IconRegister.registerIcon(
                     CommonProxy.DOMAIN + ":nugget"
-                            + NuggetType.values()[i].name().substring(0, 1)
-                            + NuggetType.values()[i].name().substring(1).toLowerCase());
+                            + NuggetType.VALUES[i].name().substring(0, 1)
+                            + NuggetType.VALUES[i].name().substring(1).toLowerCase());
         }
     }
 
@@ -63,6 +63,6 @@ public class ItemNugget extends Item {
 
     @Override
     public String getItemStackDisplayName(ItemStack stack) {
-        return NuggetType.values()[stack.getItemDamage()].getName();
+        return NuggetType.VALUES[stack.getItemDamage()].getName();
     }
 }

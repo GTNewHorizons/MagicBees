@@ -462,7 +462,7 @@ public class Config {
     private void setupNuggets() {
         nuggets = new ItemNugget();
         String item;
-        for (NuggetType type : NuggetType.values()) {
+        for (NuggetType type : NuggetType.VALUES) {
             LogHelper.info("Found nugget of type " + type.toString());
             item = type.toString().toLowerCase();
             item = Character.toString(item.charAt(0)).toUpperCase() + item.substring(1);
