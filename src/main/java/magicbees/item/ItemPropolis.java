@@ -36,7 +36,7 @@ public class ItemPropolis extends Item {
     @SideOnly(Side.CLIENT)
     @SuppressWarnings({ "unchecked", "rawtypes" })
     public void getSubItems(Item item, CreativeTabs tabs, List list) {
-        for (PropolisType type : PropolisType.values()) {
+        for (PropolisType type : PropolisType.VALUES) {
             list.add(this.getStackForType(type));
         }
     }
@@ -50,14 +50,14 @@ public class ItemPropolis extends Item {
     public int getColorFromItemStack(ItemStack stack, int pass) {
         int colour = 0xffffff;
         int meta = stack.getItemDamage();
-        if (meta >= 0 && meta < PropolisType.values().length) {
-            colour = PropolisType.values()[meta].colour;
+        if (meta >= 0 && meta < PropolisType.VALUES.length) {
+            colour = PropolisType.VALUES[meta].colour;
         }
         return colour;
     }
 
     @Override
     public String getItemStackDisplayName(ItemStack stack) {
-        return PropolisType.values()[stack.getItemDamage()].getName();
+        return PropolisType.VALUES[stack.getItemDamage()].getName();
     }
 }

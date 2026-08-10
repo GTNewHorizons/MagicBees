@@ -13,7 +13,9 @@ public enum PropolisType {
     ORDER("dull", 0xDDDDFF),
     CHAOS("magic", 0x555577),;
 
-    private PropolisType(String pName, int overlayColour) {
+    public static final PropolisType[] VALUES = values();
+
+    PropolisType(String pName, int overlayColour) {
         this.name = pName;
         this.colour = overlayColour;
     }
