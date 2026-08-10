@@ -442,7 +442,7 @@ public class Config {
         hive = new BlockHive();
         GameRegistry.registerBlock(hive, ItemMagicHive.class, "hive");
 
-        for (HiveType t : HiveType.values()) {
+        for (HiveType t : HiveType.VALUES) {
             hive.setHarvestLevel("scoop", 0, t.ordinal());
         }
     }

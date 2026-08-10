@@ -29,6 +29,8 @@ public enum HiveType {
     INFERNAL("infernal", BeeSpecies.INFERNAL, 15, true),
     OBLIVION("oblivion", BeeSpecies.OBLIVION, 7, true),;
 
+    public static final HiveType[] VALUES = values();
+
     private static String[] nameList;
 
     private String name;
@@ -43,8 +45,8 @@ public enum HiveType {
     public static HiveType getHiveFromMeta(int meta) {
         HiveType type = CURIOUS;
 
-        if (meta > 0 && meta < HiveType.values().length) {
-            type = HiveType.values()[meta];
+        if (meta > 0 && meta < HiveType.VALUES.length) {
+            type = HiveType.VALUES[meta];
         }
 
         return type;
@@ -96,7 +98,7 @@ public enum HiveType {
 
     @SideOnly(Side.CLIENT)
     public static void registerIcons(IIconRegister register) {
-        for (HiveType type : HiveType.values()) {
+        for (HiveType type : HiveType.VALUES) {
             type.icons = new IIcon[2];
 
             type.icons[0] = register.registerIcon(CommonProxy.DOMAIN + ":beehive." + type.ordinal() + ".top");
@@ -167,9 +169,9 @@ public enum HiveType {
     }
 
     private static String[] generateNames() {
-        String[] names = new String[values().length];
+        String[] names = new String[VALUES.length];
         for (int i = 0; i < names.length; ++i) {
-            names[i] = values()[i].name;
+            names[i] = VALUES[i].name;
         }
         return names;
     }
