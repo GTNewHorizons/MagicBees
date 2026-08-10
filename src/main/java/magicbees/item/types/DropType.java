@@ -11,7 +11,9 @@ public enum DropType {
     LUX("lux", 0xF5F3A4, 0xC9C87D),
     ENDEARING("endearing", 0x12E3D9, 0x069E97),;
 
-    private DropType(String pName, int colourA, int colourB) {
+    public static final DropType[] VALUES = values();
+
+    DropType(String pName, int colourA, int colourB) {
         this.name = pName;
         this.combColour[0] = colourA;
         this.combColour[1] = colourB;

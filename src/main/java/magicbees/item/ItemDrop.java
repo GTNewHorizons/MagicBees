@@ -37,7 +37,7 @@ public class ItemDrop extends Item {
     @SideOnly(Side.CLIENT)
     @SuppressWarnings({ "unchecked", "rawtypes" })
     public void getSubItems(Item item, CreativeTabs tabs, List list) {
-        for (DropType type : DropType.values()) {
+        for (DropType type : DropType.VALUES) {
             list.add(this.getStackForType(type));
         }
     }
@@ -70,11 +70,11 @@ public class ItemDrop extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public int getColorFromItemStack(ItemStack stack, int pass) {
-        int meta = Math.max(0, Math.min(DropType.values().length - 1, stack.getItemDamage()));
-        int colour = DropType.values()[meta].combColour[0];
+        int meta = Math.max(0, Math.min(DropType.VALUES.length - 1, stack.getItemDamage()));
+        int colour = DropType.VALUES[meta].combColour[0];
 
         if (pass >= 1) {
-            colour = DropType.values()[meta].combColour[1];
+            colour = DropType.VALUES[meta].combColour[1];
         }
 
         return colour;
@@ -82,6 +82,6 @@ public class ItemDrop extends Item {
 
     @Override
     public String getItemStackDisplayName(ItemStack stack) {
-        return DropType.values()[stack.getItemDamage()].getName();
+        return DropType.VALUES[stack.getItemDamage()].getName();
     }
 }
