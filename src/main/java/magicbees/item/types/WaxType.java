@@ -8,7 +8,9 @@ public enum WaxType {
     SOUL("soul", false, 0x967C63),
     AMNESIC("amnesic", true, 0x856DFF);
 
-    private WaxType(String n, boolean sp, int c) {
+    public static final WaxType[] VALUES = values();
+
+    WaxType(String n, boolean sp, int c) {
         this.name = n;
         this.sparkly = sp;
         this.colour = c;
