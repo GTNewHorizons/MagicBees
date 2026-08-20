@@ -1,7 +1,7 @@
 // Add your dependencies here
 
 dependencies {
-    api("com.ruling_0:MaterialLib:0.9.0-mu:dev")
+    api('com.ruling_0:MaterialLib:0.9.0-mu:dev')
     api('com.github.GTNewHorizons:ForestryMC:4.11.8:dev')
 
     compileOnly('com.github.GTNewHorizons:BloodMagic:1.8.14:dev')
@@ -9,7 +9,7 @@ dependencies {
     compileOnly('com.github.GTNewHorizons:Baubles-Expanded:2.2.11-GTNH:dev') {transitive = false}
     compileOnly('com.github.GTNewHorizons:Botania:1.13.16-GTNH:api') {transitive = false}
     compileOnly('thaumcraft:Thaumcraft:1.7.10-4.2.3.5:dev') {transitive = false}
-    compileOnly("com.github.GTNewHorizons:GT5-Unofficial:5.99.99-mu4:dev")
+    compileOnly('com.github.GTNewHorizons:GT5-Unofficial:5.99.99-mu4:dev')
     compileOnly('com.github.GTNewHorizons:ThaumicEnergistics:1.7.34-GTNH:dev')
 }
 
