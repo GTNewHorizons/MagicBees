@@ -32,15 +32,19 @@ public enum ResourceType {
     // Dummy items for Thaumanomicon research icons.
     // These won't ever actually exist in-game, and so they can be moved around.
     RESEARCH_STARTNODE("startNode", false),
-    RESEARCH_BEEINFUSION("beeInfusion", false),;
+    RESEARCH_BEEINFUSION("beeInfusion", false);
 
-    private ResourceType(String n, boolean show) {
+    /**
+     * Cached values() array for frequent read-only operations, the array should NOT be mutated.
+     */
+    public static final ResourceType[] VALUES = values();
+    private final String name;
+    public boolean showInList;
+
+    ResourceType(String n, boolean show) {
         this.name = n;
         this.showInList = show;
     }
-
-    private String name;
-    public boolean showInList;
 
     public void setHidden() {
         this.showInList = false;

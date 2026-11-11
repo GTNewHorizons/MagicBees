@@ -69,7 +69,7 @@ public class TileEntityApimancersDrainerGT extends TileEntityApimancersDrainerCo
         MTEIndustrialApiary industrialApiary = getGTIndustrialApiary(GTMetaTileEntity);
         int housingProductionMultiplier = super.getProductionMultiplier(modifier, queen, te);
         return industrialApiary != null
-                ? housingProductionMultiplier * (int) Math.ceil(Math.sqrt(industrialApiary.mSpeed))
+                ? housingProductionMultiplier * (int) Math.ceil(Math.sqrt(industrialApiary.getSpeed()))
                 : housingProductionMultiplier;
     }
 

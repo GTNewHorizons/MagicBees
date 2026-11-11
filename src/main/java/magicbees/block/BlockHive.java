@@ -43,7 +43,7 @@ public class BlockHive extends Block {
     @Override
     public int getLightValue(IBlockAccess world, int x, int y, int z) {
         int meta = world.getBlockMetadata(x, y, z);
-        if (meta < 0 || meta > HiveType.values().length) {
+        if (meta < 0 || meta > HiveType.VALUES.length) {
             meta = 0;
         }
         return HiveType.getHiveFromMeta(meta).getLightValue();
@@ -54,7 +54,7 @@ public class BlockHive extends Block {
     @Override
     public void getSubBlocks(Item item, CreativeTabs tab, List itemsList) {
         // Java bitches about raw types & types not being checked. Sorry, but the API sucks.
-        for (HiveType type : HiveType.values()) {
+        for (HiveType type : HiveType.VALUES) {
             if (type.show || Config.forestryDebugEnabled) {
                 itemsList.add(new ItemStack(this, 1, type.ordinal()));
             }
@@ -75,7 +75,7 @@ public class BlockHive extends Block {
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int meta) {
-        if (meta < 0 || meta > HiveType.values().length) {
+        if (meta < 0 || meta > HiveType.VALUES.length) {
             meta = 0;
         }
         return HiveType.getHiveFromMeta(meta).getIconForSide(side);

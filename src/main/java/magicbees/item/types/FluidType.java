@@ -48,12 +48,16 @@ public enum FluidType {
     MANA("mana"),
     COAL("coal"),;
 
-    public String liquidID;
+    /**
+     * Cached values() array for frequent read-only operations, the array should NOT be mutated.
+     */
+    public static final FluidType[] VALUES = values();
+    public final String liquidID;
     public int iconIdx;
     public boolean available = false;
     public IIcon liquidIcon;
 
-    private FluidType(String l) {
+    FluidType(String l) {
         this.liquidID = l;
     }
 

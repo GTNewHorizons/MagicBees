@@ -38,7 +38,7 @@ public class ItemComb extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public void getSubItems(Item item, CreativeTabs tabs, List list) {
-        for (CombType type : CombType.values()) {
+        for (CombType type : CombType.VALUES) {
             if (type.showInList || Config.forestryDebugEnabled) {
                 list.add(this.getStackForType(type));
             }
@@ -73,11 +73,11 @@ public class ItemComb extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public int getColorFromItemStack(ItemStack stack, int pass) {
-        int meta = Math.max(0, Math.min(CombType.values().length - 1, stack.getItemDamage()));
-        int colour = CombType.values()[meta].getColours()[0];
+        int meta = Math.max(0, Math.min(CombType.VALUES.length - 1, stack.getItemDamage()));
+        int colour = CombType.VALUES[meta].getColours()[0];
 
         if (pass >= 1) {
-            colour = CombType.values()[meta].getColours()[1];
+            colour = CombType.VALUES[meta].getColours()[1];
         }
 
         return colour;
@@ -85,12 +85,12 @@ public class ItemComb extends Item {
 
     @Override
     public String getItemStackDisplayName(ItemStack stack) {
-        return CombType.values()[stack.getItemDamage()].getName();
+        return CombType.VALUES[stack.getItemDamage()].getName();
     }
 
     @Override
     public int getDamage(ItemStack stack) {
-        if (CombType.values().length < super.getDamage(stack)) {
+        if (CombType.VALUES.length < super.getDamage(stack)) {
             stack.setItemDamage(0);
         }
         return super.getDamage(stack);

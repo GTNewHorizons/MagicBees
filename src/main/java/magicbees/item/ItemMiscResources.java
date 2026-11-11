@@ -17,7 +17,7 @@ import magicbees.main.utils.TabMagicBees;
 
 public class ItemMiscResources extends Item {
 
-    private IIcon[] icons = new IIcon[ResourceType.values().length];
+    private final IIcon[] icons = new IIcon[ResourceType.VALUES.length];
 
     public ItemMiscResources() {
         super();
@@ -39,7 +39,7 @@ public class ItemMiscResources extends Item {
     @SideOnly(Side.CLIENT)
     @SuppressWarnings({ "unchecked", "rawtypes" })
     public void getSubItems(Item item, CreativeTabs tabs, List list) {
-        for (ResourceType type : ResourceType.values()) {
+        for (ResourceType type : ResourceType.VALUES) {
             if (type.showInList) {
                 list.add(this.getStackForType(type));
             }
@@ -48,9 +48,8 @@ public class ItemMiscResources extends Item {
 
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister par1IconRegister) {
-        for (int i = 0; i < ResourceType.values().length; i++) {
-            this.icons[i] = par1IconRegister
-                    .registerIcon(CommonProxy.DOMAIN + ":" + ResourceType.values()[i].getName());
+        for (int i = 0; i < ResourceType.VALUES.length; i++) {
+            this.icons[i] = par1IconRegister.registerIcon(CommonProxy.DOMAIN + ":" + ResourceType.VALUES[i].getName());
         }
     }
 
@@ -62,6 +61,6 @@ public class ItemMiscResources extends Item {
 
     @Override
     public String getItemStackDisplayName(ItemStack stack) {
-        return ResourceType.values()[stack.getItemDamage()].getLocalizedName();
+        return ResourceType.VALUES[stack.getItemDamage()].getLocalizedName();
     }
 }

@@ -165,7 +165,7 @@ public class Config {
     public static Configuration configuration;
 
     // ---- Loaded mods -----------------------------------------
-    public static boolean isGTLoaded = Loader.isModLoaded("gregtech");
+    public static boolean isGT5uNHLoaded = Loader.isModLoaded("gregtech_nh");
     public static boolean isGTNHCoreModLoaded = Loader.isModLoaded("gregtech") && Loader.isModLoaded("dreamcraft");
     public static boolean isThaumicEnergisticsLoaded = Loader.isModLoaded("thaumicenergistics");
 
@@ -442,7 +442,7 @@ public class Config {
         hive = new BlockHive();
         GameRegistry.registerBlock(hive, ItemMagicHive.class, "hive");
 
-        for (HiveType t : HiveType.values()) {
+        for (HiveType t : HiveType.VALUES) {
             hive.setHarvestLevel("scoop", 0, t.ordinal());
         }
     }
@@ -462,7 +462,7 @@ public class Config {
     private void setupNuggets() {
         nuggets = new ItemNugget();
         String item;
-        for (NuggetType type : NuggetType.values()) {
+        for (NuggetType type : NuggetType.VALUES) {
             LogHelper.info("Found nugget of type " + type.toString());
             item = type.toString().toLowerCase();
             item = Character.toString(item.charAt(0)).toUpperCase() + item.substring(1);

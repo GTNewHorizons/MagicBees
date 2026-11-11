@@ -19,7 +19,7 @@ public class BeeGenomeManager {
 
     // Basic genome for All thaumic bees.
     private static IAllele[] getTemplateModBase() {
-        IAllele[] genome = new IAllele[EnumBeeChromosome.values().length];
+        IAllele[] genome = new IAllele[EnumBeeChromosome.VALUES.length];
 
         genome[EnumBeeChromosome.SPECIES.ordinal()] = BeeSpecies.MYSTICAL.getSpecies();
         genome[EnumBeeChromosome.SPEED.ordinal()] = Allele.getBaseAllele("speedSlowest");

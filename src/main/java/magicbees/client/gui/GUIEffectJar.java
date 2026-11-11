@@ -3,6 +3,7 @@ package magicbees.client.gui;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.StatCollector;
 
 import org.lwjgl.opengl.GL11;
 
@@ -36,7 +37,7 @@ public class GUIEffectJar extends GuiContainer {
 
     @Override
     protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-        fontRendererObj.drawString("Inventory", 9, 63, 0);
+        fontRendererObj.drawString(StatCollector.translateToLocal("container.inventory"), 9, 63, 0);
     }
 
     @Override

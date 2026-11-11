@@ -36,7 +36,9 @@ public class BlockEffectJar extends BlockContainer {
         boolean activate = false;
 
         if (!player.isSneaking()) {
-            player.openGui(MagicBees.object, UIScreens.EFFECT_JAR.ordinal(), world, x, y, z);
+            if (!world.isRemote) {
+                player.openGui(MagicBees.object, UIScreens.EFFECT_JAR.ordinal(), world, x, y, z);
+            }
             activate = true;
         }
 

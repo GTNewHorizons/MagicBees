@@ -15,6 +15,8 @@ public enum NuggetType {
     EMERALD,
     APATITE,;
 
+    public static final NuggetType[] VALUES = values();
+
     private Item targetIngot;
     private boolean active;
 

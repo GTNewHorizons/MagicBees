@@ -45,14 +45,14 @@ public class ItemWax extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public IIcon getIconFromDamage(int meta) {
-        return (WaxType.values()[meta].sparkly) ? this.itemIcon : this.secondaryIcon;
+        return (WaxType.VALUES[meta].sparkly) ? this.itemIcon : this.secondaryIcon;
     }
 
     @Override
     @SideOnly(Side.CLIENT)
     @SuppressWarnings({ "unchecked", "rawtypes" })
     public void getSubItems(Item item, CreativeTabs tabs, List list) {
-        for (WaxType type : WaxType.values()) {
+        for (WaxType type : WaxType.VALUES) {
             list.add(this.getStackForType(type));
         }
     }
@@ -62,14 +62,14 @@ public class ItemWax extends Item {
     public int getColorFromItemStack(ItemStack stack, int pass) {
         int colour = 0xffffff;
         int meta = stack.getItemDamage();
-        if (meta >= 0 && meta < WaxType.values().length) {
-            colour = WaxType.values()[meta].colour;
+        if (meta >= 0 && meta < WaxType.VALUES.length) {
+            colour = WaxType.VALUES[meta].colour;
         }
         return colour;
     }
 
     @Override
     public String getItemStackDisplayName(ItemStack stack) {
-        return WaxType.values()[stack.getItemDamage()].getName();
+        return WaxType.VALUES[stack.getItemDamage()].getName();
     }
 }
