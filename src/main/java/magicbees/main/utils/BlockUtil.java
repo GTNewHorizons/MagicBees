@@ -50,11 +50,10 @@ public class BlockUtil {
 
     public static List<Chunk> getChunksInSearchRange(World world, int xCoord, int zCoord, int searchRadius) {
         List<Chunk> searchChunks = new ArrayList<Chunk>();
-        int chunkRange = (int) Math.ceil(searchRadius / 16.0);
-        int minChunkX = xCoord / 16 - chunkRange;
-        int maxChunkX = xCoord / 16 + chunkRange;
-        int minChunkZ = zCoord / 16 - chunkRange;
-        int maxChunkZ = zCoord / 16 + chunkRange;
+        int minChunkX = (xCoord - searchRadius) >> 4;
+        int maxChunkX = (xCoord + searchRadius) >> 4;
+        int minChunkZ = (zCoord - searchRadius) >> 4;
+        int maxChunkZ = (zCoord + searchRadius) >> 4;
 
         for (int chunkX = minChunkX; chunkX <= maxChunkX; ++chunkX) {
             for (int chunkZ = minChunkZ; chunkZ <= maxChunkZ; ++chunkZ) {
